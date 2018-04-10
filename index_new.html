@@ -1,171 +1,258 @@
-<!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <title>Strata by HTML5 UP</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <!--[if lte IE 8]>
-    <script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="assets/css/main.css"/>
-    <!--[if lte IE 8]>
-    <link rel="stylesheet" href="assets/css/ie8.css"/><![endif]-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Olin Info</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
     <style>
-        .bg {
+        .olin-bg {
             background: url("images/background.png") no-repeat center;
             background-size: cover;
         }
-        /* The Modal (background) */
-        .modal {
-            display: none; /* Hidden by default */
-            position: fixed; /* Stay in place */
-            z-index: 1; /* Sit on top */
-            padding-top: 100px; /* Location of the box */
-            left: 0;
-            top: 0;
-            width: 100%; /* Full width */
-            height: 100%; /* Full height */
-            overflow: auto; /* Enable scroll if needed */
-            background-color: rgb(0, 0, 0); /* Fallback color */
-            background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-        }
-
-        /* Modal Content */
-        .modal-content {
-            background-color: #fefefe;
-            margin: auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-        }
-
-        /* The Close Button */
-        .modalClose {
-            color: #aaaaaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        .modalClose:hover,
-        .modalClose:focus {
-            color: #000;
-            text-decoration: none;
-            cursor: pointer;
-        }
     </style>
 </head>
-<body id="top" class="bg">
 
-<div class="container" style="margin: 2em 2em 0 2em; width: fit-content">
-    <section id="two">
-        <h2>Olin.info</h2>
+<body class="olin-bg">
+<div class="container" style="margin: 2em 2em 2em 2em; max-width: fit-content">
+    <h1>Olin.info</h1>
 
-        <div class="row">
-            <article class="12u 12u$(xsmall) work-item">
-                <a href="images/calendar.png" class="image fit thumb"><img src="images/calendar.png" alt=""/></a>
-                <h3>Calendar</h3>
-            </article>
-
-            <!-- Menu tile -->
-            <article class="4u 12u$(xsmall) work-item">
-                <a data-target="menu-modal" class="modalBtn image fit thumb"><img src="images/menu.png" alt=""/></a>
-                <h3>Menu</h3>
-            </article>
-            <div id="menu-modal" class="modal">
-                <div class="modal-content">
-                    <span class="modalClose" data-target="menu-modal">&times;</span>
-                    <p>Some text in the Modal..</p>
+    <!-- Grid row -->
+    <div class="row">
+        <!-- Calendar -->
+        <div class="col-md-12 mb-4">
+            <div class="view flex-center overlay" data-toggle="modal" data-target="#calendarModal">
+                <img src="images/calendar.png" class="img-fluid"
+                     alt="">
+                <div class="mask flex-center rgba-light-blue-strong">
+                    <h2 class="white-text">Calendar</h2>
                 </div>
             </div>
-
-            <!-- Carpe tile -->
-            <article class="4u 12u$(xsmall) work-item">
-                <a data-target="carpe-modal" class="modalBtn image fit thumb"><img src="images/carped.jpg" alt=""/></a>
-                <h3>Carpediem</h3>
-            </article>
-            <div id="carpe-modal" class="modal">
-                <div class="modal-content">
-                    <span class="modalClose" data-target="carpe-modal">&times;</span>
-                    <p>Some text in the Modal..</p>
-                </div>
-            </div>
-
-            <!-- IT tile -->
-            <article class="4u 12u$(xsmall) work-item">
-                <a data-target="it-modal" class="modalBtn image fit thumb"><img src="images/it.PNG" alt=""/></a>
-                <h3>Olin IT</h3>
-            </article>
-            <div id="it-modal" class="modal">
-                <div class="modal-content">
-                    <span class="modalClose" data-target="it-modal">&times;</span>
-                    <p>Some text in the Modal..</p>
-                </div>
-            </div>
-
-            <!--&lt;!&ndash; Carpe tile &ndash;&gt;-->
-            <!--<article class="4u 12u$(xsmall) work-item">-->
-                <!--<a data-target="carpe-modal" class="modalBtn image fit thumb"><img src="images/carped.jpg" alt=""/></a>-->
-                <!--<h3>Carpediem</h3>-->
-            <!--</article>-->
-            <!--<div id="carpe-modal" class="modal">-->
-                <!--<div class="modal-content">-->
-                    <!--<span class="modalClose" data-target="carpe-modal">&times;</span>-->
-                    <!--<p>Some text in the Modal..</p>-->
-                <!--</div>-->
-            <!--</div>-->
-
-            <!--&lt;!&ndash; Carpe tile &ndash;&gt;-->
-            <!--<article class="4u 12u$(xsmall) work-item">-->
-                <!--<a data-target="carpe-modal" class="modalBtn image fit thumb"><img src="images/carped.jpg" alt=""/></a>-->
-                <!--<h3>Carpediem</h3>-->
-            <!--</article>-->
-            <!--<div id="carpe-modal" class="modal">-->
-                <!--<div class="modal-content">-->
-                    <!--<span class="modalClose" data-target="carpe-modal">&times;</span>-->
-                    <!--<p>Some text in the Modal..</p>-->
-                <!--</div>-->
-            <!--</div>-->
         </div>
 
-    </section>
+        <div class="modal fade" id="calendarModal" tabindex="-1" role="dialog" aria-labelledby="calendarModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog modal-fluid" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="calendarModalLabel">Olin Calendar</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Calendar content...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-light-blue" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Open in new tab</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Calendar -->
 
+
+    </div>
+    <!-- Grid row -->
+
+    <!-- Grid row -->
+    <div class="row">
+
+        <!-- Menu -->
+        <div class="col-lg-4 col-md-12 mb-4">
+            <div class="view flex-center overlay" data-toggle="modal" data-target="#menuModal">
+                <img src="images/menu.png" class="img-fluid"
+                     alt="">
+                <div class="mask flex-center rgba-light-blue-strong">
+                    <h2 class="white-text">Menu</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="menuModal" tabindex="-1" role="dialog" aria-labelledby="menuModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog modal-fluid" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="menuModalLabel">Menu</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Menu content...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-light-blue" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Open in new tab</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menu -->
+
+        <!-- Carpe -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="view flex-center overlay" data-toggle="modal" data-target="#carpeModal">
+                <img src="images/carped.jpg" class="img-fluid "
+                     alt="">
+                <div class="mask flex-center rgba-light-blue-strong">
+                    <h2 class="white-text">Carpediem</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="carpeModal" tabindex="-1" role="dialog" aria-labelledby="carpeModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog modal-fluid" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="carpeModalLabel">Carpediem</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Carpe content...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-light-blue" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Open in new tab</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carpe -->
+
+        <!-- Printer -->
+        <div class="col-lg-4 col-md-6 mb-4">
+
+            <div class="view flex-center overlay" data-toggle="modal" data-target="#printerModal">
+                <img src="images/it.png" class="img-fluid" style="max-height: 500px"
+                     alt="">
+                <div class="mask flex-center rgba-light-blue-strong">
+                    <h2 class="white-text">Printers</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="printerModal" tabindex="-1" role="dialog" aria-labelledby="printerModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog modal-fluid" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="printerModalLabel">Printer</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Printer content...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-light-blue" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Open in new tab</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Printer -->
+
+    </div>
+    <!-- Grid row -->
+
+    <!-- Grid row -->
+    <div class="row">
+
+        <!-- Olin IT -->
+        <div class="col-md-6 mb-3">
+            <div class="view flex-center overlay" data-toggle="modal" data-target="#itModal">
+                <img src="images/it.png" class="img-fluid "
+                     alt="">
+                <div class="mask flex-center rgba-light-blue-strong">
+                    <h2 class="white-text">Olin IT</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="itModal" tabindex="-1" role="dialog" aria-labelledby="itModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog modal-fluid" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="itModalLabel">IT</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        IT content...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-light-blue" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Open in new tab</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Olin IT -->
+
+        <!-- Laundry -->
+        <div class="col-md-6 mb-3">
+            <div class="view flex-center overlay" data-toggle="modal" data-target="#laundryModal">
+                <img src="images/laundry.png" class="img-fluid "
+                     alt="">
+                <div class="mask flex-center rgba-light-blue-strong">
+                    <h2 class="white-text">Laundry Status Check</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="laundryModal" tabindex="-1" role="dialog" aria-labelledby="laundryModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog modal-fluid" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="laundryModalLabel">Laundry</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Laundry content...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-light-blue" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Open in new tab</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Laundry -->
+
+    </div>
+    <!-- Grid row -->
 </div>
 
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.poptrox.min.js"></script>
-<script src="assets/js/skel.min.js"></script>
-<script src="assets/js/util.js"></script>
-<!--[if lte IE 8]>
-<script src="assets/js/ie/respond.min.js"></script><![endif]-->
-<script src="assets/js/main.js"></script>
-<script>
-    var modal;
-    $(".modalBtn").click(function (e) {
-        var targetId = this.getAttribute("data-target");
-        modal = document.getElementById(targetId);
-        modal.style.display = "block";
-    });
-
-    // When the user clicks on <span> (x), close the modal
-    $(".modalClose").click(function (e) {
-        var targetId = this.getAttribute("data-target");
-        modal = document.getElementById(targetId);
-        modal.style.display = "none";
-    });
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-        if (event.target === modal) {
-            modal.style.display = "none";
-        }
-    }
-</script>
-
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
 </body>
+
 </html>
