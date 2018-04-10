@@ -4,71 +4,84 @@
 @import 'libs/skel';
 
 /*
-	Prologue by HTML5 UP
+	Strata by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Section/Article */
+/* Button */
 
-	section, article {
-		> .last-child,
-		&.last-child {
-			margin-bottom: 0;
-		}
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	.button {
+		position: relative;
+		-ms-behavior: url('assets/js/ie/PIE.htc');
 	}
 
 /* Form */
 
-	form {
-		input[type="text"],
-		input[type="email"],
-		input[type="password"],
-		select,
-		textarea {
-			-ms-behavior: url('assets/js/ie/PIE.htc');
-		}
-	}
-
-/* Button */
-
-	input[type="button"],
-	input[type="submit"],
-	input[type="reset"],
-	button,
-	.button {
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	select,
+	textarea {
+		position: relative;
 		-ms-behavior: url('assets/js/ie/PIE.htc');
 	}
 
-/* Header */
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	select {
+		height: _size(element-height);
+		line-height: _size(element-height);
+	}
 
-	#nav {
-		ul {
-			li {
-				a {
-					color: #888;
-
-					&.active {
-						background: #1C2022;
-					}
-				}
+	input[type="checkbox"],
+	input[type="radio"] {
+		& + label {
+			&:before {
+				display: none;
 			}
 		}
 	}
 
-	#headerToggle {
-		.toggle {
-			background-color: #888;
+/* Image */
+
+	.image {
+		position: relative;
+		-ms-behavior: url('assets/js/ie/PIE.htc');
+
+		&:before, &:after {
+			display: none !important;
+		}
+
+		img {
+			position: relative;
+			-ms-behavior: url('assets/js/ie/PIE.htc');
 		}
 	}
 
-/* Main */
+/* Header */
 
-	#main {
-		> section {
-			&.cover {
-				background-position: auto;
-				-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
+	#header {
+		background-image: url('../../images/bg.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
+
+		h1 {
+			color: _palette(accent2, fg-bold);
+		}
+	}
+
+/* Footer */
+
+	#footer {
+		.icons {
+			a {
+				color: _palette(accent2, fg-bold);
 			}
 		}
 	}

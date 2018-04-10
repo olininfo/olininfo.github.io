@@ -1,23 +1,36 @@
 /*
-	Prologue by HTML5 UP
+	Strata by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
 (function($) {
 
+	var settings = {
+
+		// Parallax background effect?
+			parallax: true,
+
+		// Parallax factor (lower = more intense, higher = less intense).
+			parallaxFactor: 20
+
+	};
+
 	skel.breakpoints({
-		wide: '(min-width: 961px) and (max-width: 1880px)',
-		normal: '(min-width: 961px) and (max-width: 1620px)',
-		narrow: '(min-width: 961px) and (max-width: 1320px)',
-		narrower: '(max-width: 960px)',
-		mobile: '(max-width: 736px)'
+		xlarge: '(max-width: 1800px)',
+		large: '(max-width: 1280px)',
+		medium: '(max-width: 980px)',
+		small: '(max-width: 736px)',
+		xsmall: '(max-width: 480px)'
 	});
 
 	$(function() {
 
-		var	$window = $(window),
-			$body = $('body');
+		var $window = $(window),
+			$body = $('body'),
+			$header = $('#header'),
+			$footer = $('#footer'),
+			$main = $('#main');
 
 		// Disable animations/transitions until the page has loaded.
 			$body.addClass('is-loading');
@@ -26,93 +39,96 @@
 				$body.removeClass('is-loading');
 			});
 
-		// CSS polyfills (IE<9).
-			if (skel.vars.IEVersion < 9)
-				$(':last-child').addClass('last-child');
+		// Touch?
+			if (skel.vars.mobile) {
+
+				// Turn on touch mode.
+					$body.addClass('is-touch');
+
+				// Height fix (mostly for iOS).
+					window.setTimeout(function() {
+						$window.scrollTop($window.scrollTop() + 1);
+					}, 0);
+
+			}
 
 		// Fix: Placeholder polyfill.
 			$('form').placeholder();
 
-		// Prioritize "important" elements on mobile.
-			skel.on('+mobile -mobile', function() {
+		// Prioritize "important" elements on medium.
+			skel.on('+medium -medium', function() {
 				$.prioritize(
-					'.important\\28 mobile\\29',
-					skel.breakpoint('mobile').active
+					'.important\\28 medium\\29',
+					skel.breakpoint('medium').active
 				);
 			});
 
-		// Scrolly links.
-			$('.scrolly').scrolly();
+		// Footer.
+			skel.on('+medium', function() {
+				$footer.insertAfter($main);
+			});
 
-		// Nav.
-			var $nav_a = $('#nav a');
+			skel.on('-medium !medium', function() {
+				$footer.appendTo($header);
+			});
 
-			// Scrolly-fy links.
-				$nav_a
-					.scrolly()
-					.on('click', function(e) {
+		// Header.
 
-						var t = $(this),
-							href = t.attr('href');
+			// Parallax background.
 
-						if (href[0] != '#')
-							return;
+				// Disable parallax on IE (smooth scrolling is jerky), and on mobile platforms (= better performance).
+					if (skel.vars.browser == 'ie'
+					||	skel.vars.mobile)
+						settings.parallax = false;
 
-						e.preventDefault();
+				if (settings.parallax) {
 
-						// Clear active and lock scrollzer until scrolling has stopped
-							$nav_a
-								.removeClass('active')
-								.addClass('scrollzer-locked');
+					skel.on('change', function() {
 
-						// Set this link to active
-							t.addClass('active');
+						if (skel.breakpoint('medium').active) {
+
+							$window.off('scroll.strata_parallax');
+							$header.css('background-position', 'top left, center center');
+
+						}
+						else {
+
+							$header.css('background-position', 'left 0px');
+
+							$window.on('scroll.strata_parallax', function() {
+								$header.css('background-position', 'left ' + (-1 * (parseInt($window.scrollTop()) / settings.parallaxFactor)) + 'px');
+							});
+
+						}
 
 					});
 
-			// Initialize scrollzer.
-				var ids = [];
+					$window.on('load', function() {
+						$window.triggerHandler('scroll');
+					});
 
-				$nav_a.each(function() {
+				}
 
-					var href = $(this).attr('href');
+		// Main Sections: Two.
 
-					if (href[0] != '#')
-						return;
+			// Lightbox gallery.
+				$window.on('load', function() {
 
-					ids.push(href.substring(1));
+					$('#two').poptrox({
+						caption: function($a) { return $a.next('h3').text(); },
+						overlayColor: '#2c2c2c',
+						overlayOpacity: 0.85,
+						popupCloserText: '',
+						popupLoaderText: '',
+						selector: '.work-item a.image',
+						usePopupCaption: true,
+						usePopupDefaultStyling: false,
+						usePopupEasyClose: false,
+						usePopupNav: true,
+						windowMargin: (skel.breakpoint('small').active ? 0 : 50)
+					});
 
 				});
-
-				$.scrollzer(ids, { pad: 200, lastHack: true });
-
-		// Header (narrower + mobile).
-
-			// Toggle.
-				$(
-					'<div id="headerToggle">' +
-						'<a href="#header" class="toggle"></a>' +
-					'</div>'
-				)
-					.appendTo($body);
-
-			// Header.
-				$('#header')
-					.panel({
-						delay: 500,
-						hideOnClick: true,
-						hideOnSwipe: true,
-						resetScroll: true,
-						resetForms: true,
-						side: 'left',
-						target: $body,
-						visibleClass: 'header-visible'
-					});
-
-			// Fix: Remove transitions on WP<10 (poor/buggy performance).
-				if (skel.vars.os == 'wp' && skel.vars.osVersion < 10)
-					$('#headerToggle, #header, #main')
-						.css('transition', 'none');
 
 	});
 
