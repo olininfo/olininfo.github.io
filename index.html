@@ -1,108 +1,260 @@
-<!DOCTYPE HTML>
-<!--
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-<head>
-    <title>Prologue by HTML5 UP</title>
-    <meta charset="utf-8"/>
-    <style>
-        body, html {
-            height: 100%;
-            margin: 0;
-        }
+<!DOCTYPE html>
+<html lang="en">
 
-        .bg {
-            background: #eeeeee url("images/background.png") no-repeat center;
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Olin Info</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .olin-bg {
+            background: url("images/background.png") no-repeat center;
             background-size: cover;
         }
-
-        .item {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            transition: 0.3s;
-        }
-
-        .item:hover {
-            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-        }
-
-        .container {
-            padding: 2px 16px;
-        }
     </style>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <!--[if lte IE 8]>
-    <script src="assets_bk/js/ie/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="assets_bk/css/main.css"/>
-    <!--[if lte IE 8]>
-    <link rel="stylesheet" href="assets_bk/css/ie8.css"/><![endif]-->
-    <!--[if lte IE 9]>
-    <link rel="stylesheet" href="assets_bk/css/ie9.css"/><![endif]-->
 </head>
-<body class="bg">
 
-<!-- Portfolio -->
-<section id="portfolio" class="two dark cover"
-         style="text-align: center; padding: 40px 0 40px 0">
-    <div class="container">
+<body class="olin-bg">
+<div class="container" style="margin: 2em 2em 2em 2em; max-width: fit-content">
+    <h1>Olin.info</h1>
 
-        <header>
-            <h2>olin.info</h2>
-        </header>
-
-        <div class="row">
-            <div class="4u 12u$(mobile)">
-                <article class="item">
-                    <a href="" target="" class="image fit"><img src="images/starwars.png" alt=""/></a>
-                    <header>
-                        <h3>Ad</h3>
-                    </header>
-                </article>
-                <article class="item">
-                    <a href="http://wikis.olin.edu/it/doku.php" target="_blank" class="image fit"><img
-                            src="images/it.PNG" alt=""/></a>
-                    <header>
-                        <h3>Olin IT</h3>
-                    </header>
-                </article>
-            </div>
-            <div class="4u 12u$(mobile)">
-                <article class="item">
-                    <a href="https://events.olin.build/" target="_blank" class="image fit"><img
-                            src="images/calendar_2.png" alt=""/></a>
-                    <header>
-                        <h3>Calendar</h3>
-                    </header>
-                </article>
-                <article class="item">
-                    <a href="https://twitter.com/overheardatolin?lang=en" target="_blank" class="image fit"><img
-                            src="images/overheard.jpg" alt=""/></a>
-                    <header>
-                        <h3>Overheard@Olin</h3>
-                    </header>
-                </article>
-            </div>
-            <div class="4u$ 12u$(mobile)">
-                <article class="item">
-                    <a href="https://olin-snapshot.herokuapp.com/" target="_blank" class="image fit"><img
-                            src="images/carped.jpg" alt=""/></a>
-                    <header>
-                        <h3>Carpediem</h3>
-                    </header>
-                </article>
-                <article class="item">
-                    <a href="http://classic.laundryview.com/lvs.php" target="_blank " class="image fit"><img
-                            src="images/laundry.png" alt="" style="background-color: white"/></a>
-                    <header>
-                        <h3>Laundry Status Check</h3>
-                    </header>
-                </article>
+    <!-- Grid row -->
+    <div class="row">
+        <!-- Calendar -->
+        <div class="col-md-12 mb-4">
+            <div class="view flex-center overlay" data-toggle="modal" data-target="#calendarModal">
+                <iframe src="https://events.olin.build/calendar/academic,admission,athletics,BOW,burstthebubble,collaboratory,CORe,diversity,featured,food,FWOP,GrOW,holidays,hours,library,NINJAs,OFAC,parties,performances,PGP,robolab,shop,SLAC,StAR,talks,transportation"
+                        style="border-width:0" width=100% height=600px frameborder="0" scrolling="no"></iframe>
+                <div class="mask flex-center rgba-light-blue-strong">
+                    <h2 class="white-text">Calendar</h2>
+                </div>
             </div>
         </div>
 
+        <div class="modal fade" id="calendarModal" tabindex="-1" role="dialog" aria-labelledby="calendarModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog modal-fluid" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="calendarModalLabel">Olin Calendar</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe src="https://events.olin.build/calendar/academic,admission,athletics,BOW,burstthebubble,collaboratory,CORe,diversity,featured,food,FWOP,GrOW,holidays,hours,library,NINJAs,OFAC,parties,performances,PGP,robolab,shop,SLAC,StAR,talks,transportation"
+                                style="border-width:0" width=100% height=700px frameborder="0" scrolling="yes"></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-light-blue" data-dismiss="modal">Close</button>
+                        <a href="https://events.olin.build" target="_blank" class="btn btn-primary">Open in new tab</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Calendar -->
+
+
     </div>
-</section>
+    <!-- Grid row -->
+
+    <!-- Grid row -->
+    <div class="row">
+
+        <!-- Menu -->
+        <div class="col-lg-4 col-md-12 mb-4">
+            <div class="view flex-center overlay" data-toggle="modal" data-target="#menuModal">
+                <img src="images/menu.png" class="img-fluid"
+                     alt="">
+                <div class="mask flex-center rgba-light-blue-strong">
+                    <h2 class="white-text">Menu</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="menuModal" tabindex="-1" role="dialog" aria-labelledby="menuModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog modal-fluid" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="menuModalLabel">Menu</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe src="http://rebeccascafe.com/olin/menu-items/"
+                                style="border-width:0" width=100% height=700px frameborder="0" scrolling="yes"></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-light-blue" data-dismiss="modal">Close</button>
+                        <a href="http://rebeccascafe.com/olin/menu-items/" target="_blank" class="btn btn-primary">Open in new tab</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menu -->
+
+        <!-- Carpe -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="view flex-center overlay" data-toggle="modal" data-target="#carpeModal">
+                <img src="images/carped.jpg" class="img-fluid "
+                     alt="">
+                <div class="mask flex-center rgba-light-blue-strong">
+                    <h2 class="white-text">Carpediem</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="carpeModal" tabindex="-1" role="dialog" aria-labelledby="carpeModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog modal-fluid" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="carpeModalLabel">Carpediem</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Carpe content...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-light-blue" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Open in new tab</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carpe -->
+
+        <!-- Printer -->
+        <div class="col-lg-4 col-md-6 mb-4">
+
+            <div class="view flex-center overlay" data-toggle="modal" data-target="#printerModal">
+                <img src="images/it.png" class="img-fluid" style="max-height: 500px"
+                     alt="">
+                <div class="mask flex-center rgba-light-blue-strong">
+                    <h2 class="white-text">Printers</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="printerModal" tabindex="-1" role="dialog" aria-labelledby="printerModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog modal-fluid" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="printerModalLabel">Printer</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Printer content...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-light-blue" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Open in new tab</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Printer -->
+
+    </div>
+    <!-- Grid row -->
+
+    <!-- Grid row -->
+    <div class="row">
+
+        <!-- Olin IT -->
+        <div class="col-md-6 mb-3">
+            <div class="view flex-center overlay" data-toggle="modal" data-target="#itModal">
+                <img src="images/it.png" class="img-fluid "
+                     alt="">
+                <div class="mask flex-center rgba-light-blue-strong">
+                    <h2 class="white-text">Olin IT</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="itModal" tabindex="-1" role="dialog" aria-labelledby="itModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog modal-fluid" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="itModalLabel">IT</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        IT content...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-light-blue" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Open in new tab</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Olin IT -->
+
+        <!-- Laundry -->
+        <div class="col-md-6 mb-3">
+            <div class="view flex-center overlay" data-toggle="modal" data-target="#laundryModal">
+                <img src="images/laundry.png" class="img-fluid "
+                     alt="">
+                <div class="mask flex-center rgba-light-blue-strong">
+                    <h2 class="white-text">Laundry Status Check</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="laundryModal" tabindex="-1" role="dialog" aria-labelledby="laundryModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog modal-fluid" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="laundryModalLabel">Laundry</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Laundry content...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-light-blue" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Open in new tab</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Laundry -->
+
+    </div>
+    <!-- Grid row -->
+</div>
+
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
 </body>
+
 </html>
