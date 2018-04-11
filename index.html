@@ -24,7 +24,7 @@
 
 <body class="olin-bg">
 <div class="container" style="margin: 2em 2em 2em 2em; max-width: fit-content">
-    <h1>Olin.info</h1>
+    <h1 class="display-4">Olin.info<h1/>
 
     <!-- Grid row -->
     <div class="row">
@@ -96,7 +96,8 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-outline-light-blue" data-dismiss="modal">Close</button>
-                        <a href="http://rebeccascafe.com/olin/menu-items/" target="_blank" class="btn btn-primary">Open in new tab</a>
+                        <a href="http://rebeccascafe.com/olin/menu-items/" target="_blank" class="btn btn-primary">Open
+                            in new tab</a>
                     </div>
                 </div>
             </div>
@@ -125,7 +126,7 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        Carpe content...
+                        Coming soon!
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-outline-light-blue" data-dismiss="modal">Close</button>
@@ -140,7 +141,7 @@
         <div class="col-lg-4 col-md-6 mb-4">
 
             <div class="view flex-center overlay" data-toggle="modal" data-target="#printerModal">
-                <img src="images/it.png" class="img-fluid" style="max-height: 500px"
+                <img src="images/printer.png" class="img-fluid" style="max-height: 500px"
                      alt="">
                 <div class="mask flex-center rgba-light-blue-strong">
                     <h2 class="white-text">Printers</h2>
@@ -150,7 +151,7 @@
 
         <div class="modal fade" id="printerModal" tabindex="-1" role="dialog" aria-labelledby="printerModalLabel"
              aria-hidden="true">
-            <div class="modal-dialog modal-fluid" role="document">
+            <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="printerModalLabel">Printer</h5>
@@ -159,11 +160,34 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        Printer content...
+                        <div class="list-group">
+                            <a class="list-group-item list-group-item-action waves-effect"
+                               href="http://Ac214x01.olin.edu" target="_blank">Academic Center,
+                                Second Floor</a>
+                            <a class="list-group-item list-group-item-action waves-effect"
+                               href="http://Ac314x01.olin.edu"
+                               target="_blank">Academic Center, Third Floor</a>
+                            <a class="list-group-item list-group-item-action waves-effect"
+                               href="http://Ac414x01.olin.edu"
+                               target="_blank">Academic Center, Fourth Floor</a>
+                            <a class="list-group-item list-group-item-action waves-effect"
+                               href="http://Cc327x01.olin.edu"
+                               target="_blank">Campus Center, Third Floor
+                            </a>
+                            <a class="list-group-item list-group-item-action waves-effect"
+                               href="http://Eh135x01.olin.edu"
+                               target="_blank">East Hall, First
+                                Floor
+                            </a>
+                            <a class="list-group-item list-group-item-action waves-effect"
+                               href="http://Wh237x01.olin.edu"
+                               target="_blank">West Hall, Second
+                                Floor</a>
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-outline-light-blue" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Open in new tab</button>
+                        <!--<button type="button" class="btn btn-primary">Open in new tab</button>-->
                     </div>
                 </div>
             </div>
@@ -177,7 +201,7 @@
     <div class="row">
 
         <!-- Olin IT -->
-        <div class="col-md-6 mb-3">
+        <div class="col-lg-4 col-md-6 mb-4">
             <div class="view flex-center overlay" data-toggle="modal" data-target="#itModal">
                 <img src="images/it.png" class="img-fluid "
                      alt="">
@@ -198,19 +222,88 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        IT content...
+                        <iframe src="http://wikis.olin.edu/it/doku.php"
+                                style="border-width:0" width=100% height=700px frameborder="0" scrolling="yes"></iframe>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-outline-light-blue" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Open in new tab</button>
+                        <a href="http://wikis.olin.edu/it/doku.php" target="_blank" class="btn btn-primary">Open
+                            in new tab</a>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Olin IT -->
 
+        <!-- Shuttle -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="view flex-center overlay" data-toggle="modal" data-target="#shuttleModal">
+                <img src="images/shuttle.png" class="img-fluid "
+                     alt="">
+                <div class="mask flex-center rgba-light-blue-strong">
+                    <h2 class="white-text">BOW Shuttle</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="shuttleModal" tabindex="-1" role="dialog" aria-labelledby="shuttleModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="shuttleModalLabel">BOW Shuttle</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div style="margin-right:1em;min-width:270px;float:left;">
+                            <h3>Monday - Friday</h3>
+                            <p>07:40 A.M. - Wellesley Campus Center<br>07:42 A.M.&nbsp;- Wellesley Chapel<br>07:52 A.M. - Olin East Hall<br>07:55 A.M. - Hollister Parking Lot<br>08:05 A.M. - Wellesley Chapel</p>
+                            <p >08:10&nbsp;A.M. - Wellesley Campus Center<br>08:12 A.M. - Wellesley Chapel<br>08:22 A.M. - Olin East Hall<br>08:25 A.M. - Hollister Parking Lot<br>08:35 A.M. - Wellesley Chapel</p>
+                            <p >08:40&nbsp;A.M. - Wellesley Campus Center<br>08:42 A.M. - Wellesley Chapel<br>08:52 A.M. - Olin East Hall<br>08:55 A.M. - Hollister Parking Lot<br>09:05 A.M. - Wellesley Chapel</p>
+                            <p >09:10 A.M. - Wellesley Campus Center<br>09:12 A.M. - Wellesley Chapel<br>09:22 A.M. - Olin East Hall<br>09:25 A.M. - Hollister Parking Lot<br>09:35 A.M. - Wellesley Chapel</p>
+                            <p >09:40 A.M. - Wellesley Campus Center<br>09:42 A.M. - Wellesley Chapel<br>09:52 A.M. - Olin East Hall<br>09:55 A.M. - Hollister Parking Lot<br>10:05 A.M. - Wellesley Chapel</p>
+                            <p >10:10 A.M. - Wellesley Campus Center<br>10:12 A.M. - Wellesley Chapel<br>10:22 A.M. - Olin East Hall<br>10:25 A.M. - Hollister Parking Lot<br>10:35 A.M. - Wellesley Chapel</p>
+                            <p >10:40 A.M. - Wellesley Campus Center<br>10:42 A.M. - Wellesley Chapel<br>10:52 A.M. - Olin East Hall<br>10:55 A.M. - Hollister Parking Lot<br>11:05 A.M. - Wellesley Chapel</p>
+                            <p >11:10 A.M. - Wellesley Campus Center<br>11:12 A.M. - Wellesley Chapel<br>11:22 A.M. - Olin East Hall<br>11:25 A.M. - Hollister Parking Lot<br>11:35 A.M. - Wellesley Chapel</p>
+                            <p >11:40 A.M. - Wellesley Campus Center<br>11:42 A.M. - Wellesley Chapel<br>11:52 A.M. - Olin East Hall<br>11:55 A.M. - Hollister Parking Lot<br>12:05 P.M. - Wellesley Chapel</p>
+                            <p >12:40 P.M. - Wellesley Campus Center<br>12:42 P.M. - Wellesley Chapel<br>12:52 P.M. - Olin East Hall<br>12:55 P.M. - Hollister Parking Lot<br>01:05 P.M. - Wellesley Chapel</p>
+                            <p >01:10 P.M. - Wellesley Campus Center<br>01:12 P.M. - Wellesley Chapel<br>01:22 P.M. - Olin East Hall<br>01:25 P.M. - Hollister Parking Lot<br>01:35 P.M. - Wellesley Chapel</p>
+                            <p >01:40 P.M. - Wellesley Campus Center<br>01:42 P.M. - Wellesley Chapel<br>01:52 P.M. - Olin East Hall<br>01:55 P.M. - Hollister Parking Lot<br>02:05 P.M. - Wellesley Chapel</p>
+                            <p >02:10 P.M. - Wellesley Campus Center<br>02:12 P.M. - Wellesley Chapel<br>02:22 P.M. - Olin East Hall<br>02:25 P.M. - Hollister Parking Lot<br>02:35 P.M. - Wellesley Chapel</p>
+                            <p >02:40 P.M. - Wellesley Campus Center<br>02:42 P.M. - Wellesley Chapel<br>02:52 P.M. - Olin East Hall<br>02:55 P.M. - Hollister Parking Lot<br>03:05 P.M. - Wellesley Chapel</p>
+                            <p >03:10 P.M. - Wellesley Campus Center<br>03:12 P.M. - Wellesley Chapel<br>03:22 P.M. - Olin East Hall<br>03:25 P.M. - Hollister Parking Lot<br>03:35 P.M. - Wellesley Chapel</p>
+                            <p >03:40 P.M. - Wellesley Campus Center<br>03:42 P.M. - Wellesley Chapel<br>03:52 P.M. - Olin East Hall<br>03:55 P.M. - Hollister Parking Lot<br>04:05 P.M. - Wellesley Chapel</p>
+                            <p >04:10 P.M. - Wellesley Campus Center<br>04:12 P.M. - Wellesley Chapel<br>04:22 P.M. - Olin East Hall<br>04:25 P.M. - Hollister Parking Lot<br>04:35 P.M. - Wellesley Chapel</p>
+                            <p >04:40 P.M. - Wellesley Campus Center<br>04:42 P.M. - Wellesley Chapel<br>04:52 P.M. - Olin East Hall<br>04:55 P.M. - Hollister Parking Lot<br>05:05 P.M. - Wellesley Chapel</p>
+                            <p >05:10 P.M. - Wellesley Campus Center<br>05:12 P.M. - Wellesley Chapel<br>05:22 P.M. - Olin East Hall<br>05:25 P.M. - Hollister Parking Lot<br>05:35 P.M. - Wellesley Chapel</p>
+                            <p >05:40 P.M. - Wellesley Campus Center<br>05:42 P.M. - Wellesley Chapel<br>05:52 P.M. - Olin East Hall<br>05:55 P.M. - Hollister Parking Lot<br>06:05 P.M. - Wellesley Chapel</p>
+                            <p >06:10 P.M. - Wellesley Campus Center<br>06:12 P.M. - Wellesley Chapel<br>06:22 P.M. - Olin East Hall<br>06:25 P.M. - Hollister Parking Lot<br>06:35 P.M. - Wellesley Chapel</p>
+                            <p >06:40 P.M. - Wellesley Campus Center<br>06:42 P.M. - Wellesley Chapel<br>06:52 P.M. - Olin East Hall<br>06:55 P.M. - Hollister Parking Lot<br>07:05 P.M. - Wellesley Chapel</p>
+                            <p >07:10 P.M. - Wellesley Campus Center<br>07:12 P.M. - Wellesley Chapel<br>07:22 P.M. - Olin East Hall<br>07:25 P.M. - Hollister Parking Lot<br>07:35 P.M. - Wellesley Chapel</p>
+                            <p >07:40 P.M. - Wellesley Campus Center<br>07:42 P.M. - Wellesley Chapel<br>07:52 P.M. - Olin East Hall<br>07:55 P.M. - Hollister Parking Lot<br>08:05 P.M. - Wellesley Chapel</p>
+                            <p >08:10 P.M. - Wellesley Campus Center<br>08:12 P.M. - Wellesley Chapel<br>08:22 P.M. - Olin East Hall<br>08:25 P.M. - Hollister Parking Lot<br>08:35 P.M. - Wellesley Chapel</p>
+                            <p >08:40 P.M. - Wellesley Campus Center<br>08:42 P.M. - Wellesley Chapel<br>08:52 P.M. - Olin East Hall<br>08:55 P.M. - Hollister Parking Lot<br>09:05 P.M. - Wellesley Chapel</p>
+                            <p >09:10 P.M. - Wellesley Campus Center<br>09:12 P.M. - Wellesley Chapel<br>09:22 P.M. - Olin East Hall<br>09:25 P.M. - Hollister Parking Lot<br>09:35 P.M. - Wellesley Chapel<br>09:37 P.M. - Wellesley Campus Center​</p>
+                            <h4 class="castor-rteElement-H4">Tuesday and Thursday Evenings Only</h4>
+                            <p >09:40 P.M. - Wellesley Campus Center<br>09:42 P.M. - Wellesley Chapel<br>09:52 P.M. - Olin East Hall<br>09:55 P.M. - Hollister Parking Lot<br>10:05 P.M. - Wellesley Chapel</p>
+                            <p >10:10 P.M. - Wellesley Campus Center<br>10:12 P.M. - Wellesley Chapel<br>10:22 P.M. - Olin East Hall<br>10:25 P.M. - Hollister Parking Lot<br>10:35 P.M. - Wellesley Chapel</p>
+                            <p >10:40 P.M. - Wellesley Campus Center<br>10:42 P.M. - Wellesley Chapel<br>10:52 P.M. - Olin East Hall<br>10:55 P.M. - Hollister Parking Lot<br>11:05 P.M. - Wellesley Chapel</p>
+                            <p >11:10 P.M. - Wellesley Campus Center<br>11:12 P.M. - Wellesley Chapel<br>11:22 P.M. - Olin East Hall<br>11:25 P.M. - Hollister Parking Lot<br>11:35 P.M. - Wellesley Chapel<br>11:37 P.M. - Wellesley Campus Center</p></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-light-blue" data-dismiss="modal">Close</button>
+                        <a href="http://www.babson.edu/admission/visiting-babson/wellesley/shuttle-schedule/Pages/weekday-bow-shuttles.aspx" target="_blank" class="btn btn-primary">Open
+                            in new tab</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Shuttle -->
+
         <!-- Laundry -->
-        <div class="col-md-6 mb-3">
+        <div class="col-lg-4 col-md-6 mb-4">
             <div class="view flex-center overlay" data-toggle="modal" data-target="#laundryModal">
                 <img src="images/laundry.png" class="img-fluid "
                      alt="">
@@ -231,11 +324,13 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        Laundry content...
+                        <iframe src="http://m.laundryview.com/lvs.php"
+                                style="border-width:0" width=100% height=700px frameborder="0" scrolling="yes"></iframe>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-outline-light-blue" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Open in new tab</button>
+                        <a href="http://m.laundryview.com/lvs.php" target="_blank" class="btn btn-primary">Open
+                            in new tab</a>
                     </div>
                 </div>
             </div>
