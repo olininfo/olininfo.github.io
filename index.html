@@ -30,14 +30,14 @@
     <!-- Grid row -->
     <div class="row">
         <!-- Calendar -->
-        <div class="col-md-12 mb-4" data-toggle="modal" data-target="#calendarModal">
-            <div class="view flex-center overlay" >
+        <a class="col-md-12 mb-4" data-toggle="modal" data-target="#calendarModal">
+            <div class="view flex-center overlay">
                 <img src="images/calendar.png" class="img-fluid" width="100%" alt="">
                 <div class="mask flex-center rgba-light-blue-strong">
                     <h2 class="white-text">Calendar</h2>
                 </div>
             </div>
-        </div>
+        </a>
 
         <div class="modal fade" id="calendarModal" tabindex="-1" role="dialog" aria-labelledby="calendarModalLabel"
              aria-hidden="true">
@@ -70,15 +70,15 @@
     <div class="row">
 
         <!-- Menu -->
-        <div class="col-lg-4 col-md-12 mb-4" data-toggle="modal" data-target="#menuModal">
-            <div class="view flex-center overlay" >
+        <a class="col-lg-4 col-md-12 mb-4" data-toggle="modal" data-target="#menuModal">
+            <div class="view flex-center overlay">
                 <img src="images/menu.jpg" class="img-fluid"
                      alt="">
-                <!--<div class="mask flex-center rgba-light-blue-strong">-->
-                    <!--<h2 class="white-text">Menu</h2>-->
-                <!--</div>-->
+                <div class="mask flex-center rgba-light-blue-strong">
+                    <h2 class="white-text">Menu</h2>
+                </div>
             </div>
-        </div>
+        </a>
 
         <div class="modal fade" id="menuModal" tabindex="-1" role="dialog" aria-labelledby="menuModalLabel"
              aria-hidden="true">
@@ -105,8 +105,8 @@
         <!-- Menu -->
 
         <!-- Carpe -->
-        <div class="col-lg-4 col-md-6 mb-4">
-            <div class="view flex-center overlay" data-toggle="modal" data-target="#carpeModal">
+        <div class="col-lg-4 col-md-6 mb-4" data-toggle="modal" data-target="#carpeModal">
+            <div class="view flex-center overlay">
                 <img src="images/carped.jpg" class="img-fluid "
                      alt="">
                 <div class="mask flex-center rgba-light-blue-strong">
@@ -138,9 +138,8 @@
         <!-- Carpe -->
 
         <!-- Printer -->
-        <div class="col-lg-4 col-md-6 mb-4">
-
-            <div class="view flex-center overlay" data-toggle="modal" data-target="#printerModal">
+        <div class="col-lg-4 col-md-6 mb-4" data-toggle="modal" data-target="#printerModal">
+            <div class="view flex-center overlay">
                 <img src="images/printer.png" class="img-fluid" style="max-height: 500px"
                      alt="">
                 <div class="mask flex-center rgba-light-blue-strong">
@@ -201,8 +200,8 @@
     <div class="row">
 
         <!-- Olin IT -->
-        <div class="col-lg-4 col-md-6 mb-4">
-            <div class="view flex-center overlay" data-toggle="modal" data-target="#itModal">
+        <div class="col-lg-4 col-md-6 mb-4" data-toggle="modal" data-target="#itModal">
+            <div class="view flex-center overlay">
                 <img src="images/it.png" class="img-fluid "
                      alt="">
                 <div class="mask flex-center rgba-light-blue-strong">
@@ -236,8 +235,8 @@
         <!-- Olin IT -->
 
         <!-- Shuttle -->
-        <div class="col-lg-4 col-md-6 mb-4">
-            <div class="view flex-center overlay" data-toggle="modal" data-target="#shuttleModal">
+        <div class="col-lg-4 col-md-6 mb-4" data-toggle="modal" data-target="#shuttleModal">
+            <div class="view flex-center overlay">
                 <img src="images/shuttle.png" class="img-fluid "
                      alt="">
                 <div class="mask flex-center rgba-light-blue-strong">
@@ -366,8 +365,8 @@
         <!-- Shuttle -->
 
         <!-- Laundry -->
-        <div class="col-lg-4 col-md-6 mb-4">
-            <div class="view flex-center overlay" data-toggle="modal" data-target="#laundryModal">
+        <div class="col-lg-4 col-md-6 mb-4" data-toggle="modal" data-target="#laundryModal">
+            <div class="view flex-center overlay">
                 <img src="images/laundry.png" class="img-fluid "
                      alt="">
                 <div class="mask flex-center rgba-light-blue-strong">
@@ -418,15 +417,15 @@
 <script type="text/javascript" src="js/mdb.min.js"></script>
 
 <script>
-    // $(".modal").on("shown.bs.modal", function () { // any time a modal is shown
-    //     var urlReplace = "#" + $(this).attr('id'); // make the hash the id of the modal shown
-    //     history.pushState(null, null, urlReplace); // push state that hash into the url
-    // });
-    //
-    // // If a pushstate has previously happened and the back button is clicked, hide any modals.
-    // $(window).on('popstate', function () {
-    //     $(".modal").modal('hide');
-    // });
+    $(".modal").on("shown.bs.modal", function () { // any time a modal is shown
+        var urlReplace = "#" + $(this).attr('id'); // make the hash the id of the modal shown
+        history.pushState(null, null, urlReplace); // push state that hash into the url
+    });
+
+    // If a pushstate has previously happened and the back button is clicked, hide any modals.
+    $(window).on('popstate', function () {
+        $(".modal").modal('hide');
+    });
 
 </script>
 </body>
