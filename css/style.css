@@ -1,5 +1,10 @@
 /* Your custom styles */
-.olin-bg {
-    background: url("images/background.png") no-repeat center;
-    background-size: cover;
+
+.iframe-holder {
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+}
+
+.iframe-holder iframe {
+
 }
