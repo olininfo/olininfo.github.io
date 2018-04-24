@@ -8,3 +8,16 @@
 .iframe-holder iframe {
 
 }
+
+.olin-bg {
+    background: url("../images/background.png") center;
+    background-size: contain;
+}
+
+.tile-image {
+    border-radius: 6px;
+}
+
+.tile {
+
+}
