@@ -36,7 +36,8 @@ let keywords = {
     "forms": "star oss reimbursement forms Self Study Requirement work order",
     "adastra": "ad astra booking rooms",
     "babsonhealth": "Babson Health Services",
-    "club": "Committee for Clubs and Organizations"
+    "club": "Committee for Clubs and Organizations",
+    "feedback": "tiles site feedback"
 };
 
 function searchFunction() {
