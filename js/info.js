@@ -35,7 +35,8 @@ let keywords = {
     "mailing": "mailing lists",
     "forms": "star oss reimbursement forms Self Study Requirement work order",
     "adastra": "ad astra booking rooms",
-    "babsonhealth": "Babson Health Services"
+    "babsonhealth": "Babson Health Services",
+    "club": "Committee for Clubs and Organizations"
 };
 
 function searchFunction() {
