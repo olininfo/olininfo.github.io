@@ -18,22 +18,24 @@ $(window).on('popstate', function () {
 });
 
 let keywords = {
-    "dining": "dining menu",
-    "trim": "trim menu",
+    "dining": "dining hall olin menu",
+    "trim": "trim babson menu",
     "calendar": "calendar event",
     "printing": "printing printer",
     "laundry": "laundry",
-    "shuttle": "BOW shuttle",
+    "shuttle": "BOW Babson Wellesley Olin shuttle",
     "it": "it wiki wifi ubuntu matlab linux windows",
+    "course_browser": "BOW Babson Wellesley Olin Cross course browser registration",
     "onecard": "one card blackboard",
+    "libraries": "BOW Babson Wellesley Olin Library Libraries",
     "tools": "tools machine shop",
     "degree_reqs": "Degree requirements",
-    "reimbursement": "Reimbursement forms",
     "sgconstitution": "SG constitution student government",
-    "offcampus": "get off campus pop the bubble shuttle",
+    "offcampus": "get off campus pop the bubble shuttle boston",
     "mailing": "mailing lists",
-    "star": "star forms",
-    "oss": "OSS forms",
+    "forms": "star oss reimbursement forms Self Study Requirement work order",
+    "adastra": "ad astra booking rooms",
+    "babsonhealth": "Babson Health Services"
 };
 
 function searchFunction() {

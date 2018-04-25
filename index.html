@@ -28,29 +28,29 @@
 </form>
 
 <!-- Tiles container -->
-<div class="row mr-4 ml-4 flex-center">
+<div class="row mr-4 ml-4">
     <!-- Dining Menu -->
-    <a class="tile col-lg-3 col-md-4 col-sm-10 mb-4 flex-center" id="dining"
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="dining"
        href="http://rebeccascafe.com/olin/menu-items/" target="_blank">
-        <img src="images/menu2.png" class="hoverable img-fluid z-depth-1 tile-image" alt="1">
+        <img src="images/olindining.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="1">
     </a>
 
     <!-- Trim Menu -->
-    <a class="tile col-lg-3 col-md-4 col-sm-10 mb-4 flex-center" id="trim" href="http://www.dineoncampus.com/babson"
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="trim" href="http://www.dineoncampus.com/babson"
        target="_blank">
-        <img src="images/trimmenu.png" class="hoverable img-fluid z-depth-1 tile-image" alt="1">
+        <img src="images/babsondining.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="1">
     </a>
 
     <!-- Calendar -->
-    <a class="tile col-lg-3 col-md-4 col-sm-10 mb-4 flex-center" id="calendar"
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="calendar"
        href="https://events.olin.build/calendar/academic,burstthebubble,featured,food,holidays,StAR" target="_blank">
-        <img src="images/calendar2.png" class="hoverable img-fluid z-depth-1 tile-image" alt="1">
+        <img src="images/calendar.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="1">
     </a>
 
     <!-- Printing -->
-    <a class="tile col-lg-3 col-md-4 col-sm-10 mb-4 flex-center" id="printing" data-toggle="modal"
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="printing" data-toggle="modal"
        data-target="#printerModal">
-        <img src="images/printing.png" class="hoverable img-fluid z-depth-1 tile-image" alt="1">
+        <img src="images/printers.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="1">
     </a>
 
     <div class="modal fade" id="printerModal" tabindex="-1" role="dialog" aria-labelledby="printerModalLabel"
@@ -105,76 +105,189 @@
     </div>
 
     <!-- Laundry -->
-    <a class="tile col-lg-3 col-md-4 col-sm-10 mb-4 flex-center" id="laundry" href="http://m.laundryview.com/lvs.php"
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="laundry" href="http://m.laundryview.com/lvs.php"
        target="_blank">
-        <img src="images/laundry2.png" class="hoverable img-fluid z-depth-1 tile-image" alt="1">
+        <img src="images/laundry.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="1">
     </a>
 
     <!-- Shuttle -->
-    <a class="tile col-lg-3 col-md-4 col-sm-10 mb-4 flex-center" id="shuttle"
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="shuttle"
        href="http://bow3colleges.org/sites/default/files/ShuttleSchedule.pdf" target="_blank">
-        <img src="images/shuttle2.png" class="hoverable img-fluid z-depth-1 tile-image" alt="1">
+        <img src="images/bowshuttle.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="1">
     </a>
 
     <!-- IT -->
-    <a class="tile col-lg-3 col-md-4 col-sm-10 mb-4 flex-center" id="it" href="http://wikis.olin.edu/it/doku.php"
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="it" href="http://wikis.olin.edu/it/doku.php"
        target="_blank">
-        <img src="images/it2.png" class="hoverable img-fluid z-depth-1 tile-image" alt="1">
+        <img src="images/ITwiki.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="1">
     </a>
 
+    <!-- Course Browser -->
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="course_browser" data-toggle="modal"
+       data-target="#course_browserModal" >
+        <img src="images/coursebrowser.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="1">
+    </a>
+
+    <div class="modal fade" id="course_browserModal" tabindex="-1" role="dialog" aria-labelledby="course_browserModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="course_browserModalLabel">Course Browser</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="list-group">
+                        <a class="list-group-item list-group-item-action waves-effect"
+                           href="http://www.olin.edu/student-affairs-resources/registrar/semester-information/" target="_blank">Olin Course Browser</a>
+                        <a class="list-group-item list-group-item-action waves-effect"
+                           href="http://www.babson.edu/Academics/undergraduate/Pages/course-catalog.aspx"
+                           target="_blank">Babson Course Browser</a>
+                        <a class="list-group-item list-group-item-action waves-effect"
+                           href="https://courses.wellesley.edu/"
+                           target="_blank">Wellesley Course Browser</a>
+                        <a class="list-group-item list-group-item-action waves-effect"
+                           href="http://bow3colleges.org/crossreg/olin-cross-registration/" target="_blank">Cross Registration Page</a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-light-blue" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- One Card -->
-    <a class="tile col-lg-3 col-md-4 col-sm-10 mb-4 flex-center" id="onecard"
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="onecard"
        href="https://eacct-olin-sp.blackboard.com/eAccounts/AnonymousHome.aspx" target="_blank">
-        <img src="images/onecard.png" class="hoverable img-fluid z-depth-1 tile-image" alt="1">
+        <img src="images/onecard.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="1">
     </a>
 
     <!-- Tools -->
-    <a class="tile col-lg-3 col-md-4 col-sm-10 mb-4 flex-center" id="tools" href="https://tools.olin.edu" target="_blank">
-        <img src="images/tools.png" class="hoverable img-fluid z-depth-1 tile-image" alt="1">
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="tools" href="https://tools.olin.edu" target="_blank">
+        <img src="images/olintools.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="1">
     </a>
+
+    <!-- Libraries -->
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="libraries" data-toggle="modal"
+       data-target="#librariesModal">
+        <img src="images/library.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="1">
+    </a>
+
+    <div class="modal fade" id="librariesModal" tabindex="-1" role="dialog" aria-labelledby="librariesModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="librariesModalLabel">Library</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="list-group">
+                        <a class="list-group-item list-group-item-action waves-effect"
+                           href="https://library.olin.edu/" target="_blank">Olin Library</a>
+                        <a class="list-group-item list-group-item-action waves-effect"
+                           href="http://www.babson.edu/Academics/library/Pages/home.aspx"
+                           target="_blank">Babson Library</a>
+                        <a class="list-group-item list-group-item-action waves-effect"
+                           href="http://www.wellesley.edu/lts/"
+                           target="_blank">Wellesley Library</a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-light-blue" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Degree Requirements -->
-    <a class="tile col-lg-3 col-md-4 col-sm-10 mb-4 flex-center" id="degree_reqs"
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="degree_reqs"
        href="http://olin.smartcatalogiq.com/en/2017-18/Catalog/Programs-of-Study-and-Degree-Requirements"
        target="_blank">
-        <img src="images/degree_requirements.png" class="hoverable img-fluid z-depth-1 tile-image" alt="1">
-    </a>
-
-    <!-- Reimbursement -->
-    <a class="tile col-lg-3 col-md-4 col-sm-10 mb-4 flex-center" id="reimbursement"
-       href="http://poe.olin.edu/reimbursement.pdf" target="_blank">
-        <img src="images/reimbursement.png" class="hoverable img-fluid z-depth-1 tile-image" alt="1">
-    </a>
-
-    <!-- Constitution -->
-    <a class="tile col-lg-3 col-md-4 col-sm-10 mb-4 flex-center" id="sgconstitution"
-       href="https://github.com/olin/studentgovernment" target="_blank">
-        <img src="images/constitution.png" class="hoverable img-fluid z-depth-1 tile-image" alt="1">
-    </a>
-
-    <!-- Get off campus -->
-    <a class="tile col-lg-3 col-md-4 col-sm-10 mb-4 flex-center" id="offcampus"
-       href="https://drive.google.com/file/d/1xRvo4Asf9boG9tMHNuDUsB0omXsgt8z_/view" target="_blank">
-        <img src="images/offcampus.png" class="hoverable img-fluid z-depth-1 tile-image" alt="1">
+        <img src="images/degree.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="1">
     </a>
 
     <!-- Mailing List -->
-    <a class="tile col-lg-3 col-md-4 col-sm-10 mb-4 flex-center" id="mailing"
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="mailing"
        href="https://lists.olin.edu/mailman/listinfo/" target="_blank">
-        <img src="images/mailing.png" class="hoverable img-fluid z-depth-1 tile-image" alt="1">
+        <img src="images/email.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="1">
     </a>
 
-    <!-- Star Form -->
-    <a class="tile col-lg-3 col-md-4 col-sm-10 mb-4 flex-center" id="star"
-       href="http://www.olin.edu/academic-life/student-affairs-resources/registrar/my-forms/" target="_blank">
-        <img src="images/star.png" class="hoverable img-fluid z-depth-1 tile-image" alt="1">
+    <!-- Constitution -->
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="sgconstitution"
+       href="https://github.com/olin/studentgovernment" target="_blank">
+        <img src="images/constitution.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="1">
     </a>
 
-    <!-- OSS -->
-    <a class="tile col-lg-3 col-md-4 col-sm-10 mb-4 flex-center" id="oss"
+    <!-- Get off campus -->
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="offcampus"
+       href="https://drive.google.com/file/d/1xRvo4Asf9boG9tMHNuDUsB0omXsgt8z_/view" target="_blank">
+        <img src="images/getoffcampus.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="1">
+    </a>
+
+    <!-- Forms -->
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="forms" data-toggle="modal"
+       data-target="#formsModal"
        href="http://www.olin.edu/sites/default/files/reg_olin_self_study.pdf" target="_blank">
-        <img src="images/oss.png" class="hoverable img-fluid z-depth-1 tile-image" alt="1">
+        <img src="images/Forms.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="1">
     </a>
+
+    <div class="modal fade" id="formsModal" tabindex="-1" role="dialog" aria-labelledby="formsModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="formsModalLabel">Forms</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="list-group">
+                        <a class="list-group-item list-group-item-action waves-effect"
+                           href="http://www.olin.edu/academic-life/student-affairs-resources/registrar/my-forms/"
+                           target="_blank">STaR Forms</a>
+                        <a class="list-group-item list-group-item-action waves-effect"
+                           href="http://www.olin.edu/sites/default/files/reg_olin_self_study.pdf"
+                           target="_blank">Olin Self Study (OSS) Form </a>
+                        <a class="list-group-item list-group-item-action waves-effect"
+                           href="http://www.olin.edu/sites/default/files/reg_passionate_pursuit_proposal.pdf"
+                           target="_blank">Passionate Pursuit Proposal</a>
+                        <a class="list-group-item list-group-item-action waves-effect"
+                           href="http://www.olin.edu/sites/default/files/reg_passionate_pursuit_reimbursement_form.pdf"
+                           target="_blank">Passionate Pursuit Reimbursement Form</a>
+                        <a class="list-group-item list-group-item-action waves-effect"
+                           href="https://drive.google.com/file/d/1bujneDOOSvIpbw_v6fC9oTD_zqC6zEJH/view?usp=sharing"
+                           target="_blank">Reimbursement Form</a>
+                        <a class="list-group-item list-group-item-action waves-effect"
+                           href="https://app.webtma.net/GenerateRequest.aspx?key=8fMN5Hy6FyxarCurPZiqeTCxGg7U4E25%2fTi8Vlue5RMMiBfVfoDCswiaJa8ifcWq"
+                           target="_blank">Work Order Website</a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-light-blue" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ad Astra-->
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="adastra"
+       href="http://scheduler.olin.edu:8080/astraweb/index.jsp?start_page=home.htm" target="_blank">
+        <img src="images/adastra.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="1">
+    </a>
+
+     <!-- Babson Health Services -->
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="babsonhealth"
+       href="http://www.babson.edu/student-life/health-wellness/health-services/Pages/default.aspx" target="_blank">
+        <img src="images/babsonhealth.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="1">
+    </a>
+
 </div>
 
 <p class="text-center font-weight-bold" style="margin-bottom: 0">Made with ♥ at Olin College of Engineering</p>
