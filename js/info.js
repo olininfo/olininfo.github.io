@@ -1,4 +1,4 @@
-urlReplace = "";
+var urlReplace = "";
 $(".modal").on("shown.bs.modal", function () { // any time a modal is shown
     urlReplace = "#" + $(this).attr('id'); // make the hash the id of the modal shown
     history.pushState(null, null, urlReplace); // push state that hash into the url
@@ -18,13 +18,13 @@ $(window).on('popstate', function () {
 });
 
 let keywords = {
-    "dining": "dining hall olin menu",
-    "trim": "trim babson menu",
-    "calendar": "calendar event",
-    "printing": "printing printer",
+    "dining": "dining hall olin menu food drink",
+    "trim": "trim babson menu food drink",
+    "calendar": "calendar event academic",
+    "printing": "printing printers",
     "laundry": "laundry",
     "shuttle": "BOW Babson Wellesley Olin shuttle",
-    "it": "it wiki wifi ubuntu matlab linux windows",
+    "it": "it wiki wifi ubuntu matlab linux windows password",
     "course_browser": "BOW Babson Wellesley Olin Cross course browser registration",
     "onecard": "one card blackboard",
     "libraries": "BOW Babson Wellesley Olin Library Libraries",
@@ -32,7 +32,7 @@ let keywords = {
     "degree_reqs": "Degree requirements",
     "sgconstitution": "SG constitution student government",
     "offcampus": "get off campus pop the bubble shuttle boston",
-    "mailing": "mailing lists",
+    "mailing": "mailing lists carpediem",
     "forms": "star oss reimbursement forms Self Study Requirement work order",
     "adastra": "ad astra booking rooms",
     "babsonhealth": "Babson Health Services",
@@ -41,22 +41,28 @@ let keywords = {
 };
 
 function searchFunction() {
-    let inputs = document.getElementById('searchBar').value.toLowerCase().split(" ");
+    let inputs = document.getElementById('searchBar').value.toLowerCase().trim();
     let tiles = document.getElementsByClassName('tile');
-    // Loop through all list items, and hide those who don't match the search query
-    for (var i = 0; i < tiles.length; i++) {
-        if (!keywords[tiles[i].id])
-            continue;
+    if (!inputs) {
+        // Show all tiles
+        for (let tile of tiles)
+            tile.style.display = "";
+    } else {
+        inputs = inputs.split(" ");
+        // Loop through all list items, and hide those who don't match the search query
+        for (let tile of tiles) {
+            if (!keywords[tile.id])
+                continue;
 
-        let keyword = keywords[tiles[i].id].toLowerCase();
-        var show = false;
-        inputs.forEach((input) => {
-            if (keyword.includes(input)) {
-                show = true;
+            let keyword = keywords[tile.id].toLowerCase();
+            let show = false;
+            for(let j = 0; j < inputs.length; j++) {
+                if (keyword.includes(inputs[j]) && inputs[j]) {
+                    show = true;
+                    break;
+                }
             }
-        });
-
-        tiles[i].style.display = show ? "" : "none";
-
+            tile.style.display = show ? "" : "none";
+        }
     }
 }
