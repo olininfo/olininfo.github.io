@@ -1,7 +1,7 @@
 # Info Olin
-This is the source code for [info.olin.build](https://github.com/olininfo/olininfo.github.io/blob/master/images/background.png)
+This is the source code for [info.olin.build](https://info.olin.build)
 
-**Note:**  The open source framework [MDBootstrap](MDBootstrap) was used for parts of the web page.
+**Note:**  The open source framework [MDBootstrap](https://mdbootstrap.com) was used for parts of the web page.
 
 ## To add a tile:
 1)  Create an image for the tile
