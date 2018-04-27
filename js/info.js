@@ -26,7 +26,7 @@ let keywords = {
     "shuttle": "BOW Babson Wellesley Olin shuttle",
     "it": "it wiki wifi ubuntu matlab linux windows password",
     "course_browser": "BOW Babson Wellesley Olin Cross course browser registration",
-    "onecard": "one card blackboard",
+    "onecard": "one card blackboard onecard",
     "libraries": "BOW Babson Wellesley Olin Library Libraries",
     "tools": "tools machine shop",
     "degree_reqs": "Degree requirements",
