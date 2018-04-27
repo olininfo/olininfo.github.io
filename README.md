@@ -1,7 +1,7 @@
-# olininfo.github.io
+# Info Olin
+This is the source code for [info.olin.build](https://github.com/olininfo/olininfo.github.io/blob/master/images/background.png)
 
-
-Note:  The open source framework MDBootstrap was used for parts of the web page:  https://mdbootstrap.com
+**Note:**  The open source framework [MDBootstrap](MDBootstrap) was used for parts of the web page.
 
 ## To add a tile:
 1)  Create an image for the tile
@@ -15,7 +15,8 @@ Note:  The open source framework MDBootstrap was used for parts of the web page:
 
 3)  Edit the `index.html` file, adding code under the `<!-- Tiles container -->` section (~line 44)
 
-4) 
+4) There are two ways to make a tile:
+
 a)  To add a raw hyperlink, add the following code, editing the following parameters as you go:
 
 * TILE NAME (in the comment)
@@ -32,6 +33,8 @@ a)  To add a raw hyperlink, add the following code, editing the following parame
 ```
 b)  To open a set of options (a bootstrap modal object) add the following code, editing the parameters as you go:
 
+**Step one:** Add the tile card under the `<!-- Tiles container -->` section 
+
 * TILE NAME (in the comment)
 * YOURID (unique keyword identifying your tile)
 * YOURIDModal (literally, your keyword with “Modal” appended onto the end)
@@ -43,6 +46,8 @@ b)  To open a set of options (a bootstrap modal object) add the following code, 
 	<img src="images/YOURFILENAME.jpg” class="hoverable img-fluid z-depth-1 tile-image" alt=“TILE NAME”>
 </a>
 ```
+
+**Step two:** Below the code above, add a popup [modal](https://mdbootstrap.com/javascript/modals/) for the tile
 * TILE NAME MODAL
 * YOURIDModal
 * YOURIDModalLabel (literally, your keyword with “ModalLabel” appended onto the end)
@@ -81,6 +86,6 @@ b)  To open a set of options (a bootstrap modal object) add the following code, 
 5)  Edit the `~/js/info.js` file, adding an attribute to the keywords JSON (see `let keywords` ~line 20).  
 This attribute should consist of **YOURID**, which matches the **ID** set in `index.html`, and a list of keywords which will bring up your tile when one is typed into the search tool
 ```html
-“YOURID”: “KEYWORD1 KEYWORD2”
+“YOURID”: “KEYWORD1 KEYWORD2”,
 ```
 
