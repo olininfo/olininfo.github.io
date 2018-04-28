@@ -34,9 +34,9 @@ let keywords = {
     "offcampus": "get off campus pop the bubble shuttle boston",
     "mailing": "mailing lists carpediem",
     "forms": "star oss reimbursement forms Self Study Requirement work order",
-    "adastra": "ad astra booking rooms",
+    "adastra": "ad astra booking rooms reserve reservation",
     "babsonhealth": "Babson Health Services",
-    "club": "Committee for Clubs and Organizations",
+    "club": "Committee for Clubs and Organizations Acronym aero badminton board climbing cardistry DnD D&D Dungeons Dragons outing puzzle soft robotics formula baja oars core cco serv slac frisbee rocket Phoenix aquatic",
     "feedback": "tiles site feedback"
 };
 
@@ -56,7 +56,7 @@ function searchFunction() {
 
             let keyword = keywords[tile.id].toLowerCase();
             let show = false;
-            for(let j = 0; j < inputs.length; j++) {
+            for (let j = 0; j < inputs.length; j++) {
                 if (keyword.includes(inputs[j]) && inputs[j]) {
                     show = true;
                     break;
