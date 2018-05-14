@@ -34,6 +34,7 @@ let keywords = {
     "dining": "dining hall olin menu food drink",
     "trim": "trim babson menu food drink",
     "calendar": "calendar event academic",
+    "flyolinfly": "fly flights airport ride carpool"
     "printing": "printing printers",
     "laundry": "laundry",
     "shuttle": "BOW Babson Wellesley Olin shuttle",
