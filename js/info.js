@@ -31,7 +31,7 @@ $(document).ready(function () {
 
 
 let keywords = {
-    "dining": "dining hall olin trim wellesley babson menu restaurant food drink",
+    "dining": "dining hall olin trim wellesley babson menu restaurant Lulu Chow Wang Campus Center food drink",
     "calendar": "calendar event academic",
     "flyolinfly": "fly flights airport ride carpool transportation",
     "printing": "printing printers",
