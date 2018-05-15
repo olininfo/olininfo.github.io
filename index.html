@@ -86,16 +86,40 @@
 <div class="row mr-4 ml-4">
     <!-- Dining Menu -->
     <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="dining"
-       href="http://rebeccascafe.com/olin/menu-items/" target="_blank">
+       data-toggle="modal" data-target="#diningModal">
         <img src="images/olindining.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="Dining menu">
     </a>
 
-    <!-- Trim Menu -->
-    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="trim"
-       href="http://www.dineoncampus.com/babson"
-       target="_blank">
-        <img src="images/babsondining.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="Trim menu">
-    </a>
+    <div class="modal fade" id="diningModal" tabindex="-1" role="dialog"
+         aria-labelledby="diningModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="diningModalLabel">Course Browser</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="list-group">
+                        <a class="list-group-item list-group-item-action waves-effect"
+                           href="http://rebeccascafe.com/olin/menu-items/"
+                           target="_blank">Olin Dining</a>
+                        <a class="list-group-item list-group-item-action waves-effect"
+                           href="http://www.dineoncampus.com/babson"
+                           target="_blank">Trim Dining</a>
+                        <a class="list-group-item list-group-item-action waves-effect"
+                           href="https://www.wellesley.edu/campuslife/dining"
+                           target="_blank">Wellesley Dining</a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-light-blue" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Calendar -->
     <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="calendar"
