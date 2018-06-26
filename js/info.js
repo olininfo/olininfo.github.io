@@ -20,7 +20,7 @@ $(document).ready(function () {
     });
 
     if (window.location.hash !== "") {
-        for (var i = 0; i < modals.length; i++) {
+        for (let i = 0; i < modals.length; i++) {
             if ("#" + modals[i].id === window.location.hash) {
                 $(window.location.hash).modal('show');
                 break;
