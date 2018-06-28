@@ -124,12 +124,14 @@
         <img src="images/calendar.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="Calendar">
     </a>
     
-    <!-- FlyOlinFly -->
+    <!-- FlyOlinFly 
+	This has been hidden as it is not currently relevant to students.
     <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="flyolinfly"
        href="https://docs.google.com/spreadsheets/d/11hzuKcAYKsfMxnSWmatbb1GmgoVYBRNllnSKAT94kgE" target="_blank" rel="noopener">
 	<img src="images/flyolinfly.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="Flight carpool spreadsheet">
     </a>
-                                                        
+    -->
+	
     <!-- Printing -->
     <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="printing" data-toggle="modal"
        data-target="#printerModal" href="#">
@@ -286,11 +288,35 @@
     </div>
 
     <!-- Degree Requirements -->
-    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="degree_reqs"
-       href="http://olin.smartcatalogiq.com/en/2017-18/Catalog/Programs-of-Study-and-Degree-Requirements"
-       target="_blank" rel="noopener">
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="degreeReqs"
+       data-toggle="modal" data-target="#degreeReqsModal" href="#">
         <img src="images/degree.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="Degree Requirements">
     </a>
+
+    <div class="modal fade" id="degreeReqsModal" tabindex="-1" role="dialog"
+         aria-labelledby="degreeReqsModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="degreeReqsModalLabel">Degree Requirements</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="list-group">
+                        <a class="list-group-item list-group-item-action waves-effect"
+                           href="http://www.olin.edu/sites/default/files/reg_curriculummap_2017_18_2.0.pdf"
+                           target="_blank" rel="noopener">Course Requirements Chart</a>
+                        <a class="list-group-item list-group-item-action waves-effect"
+                           href="http://olin.smartcatalogiq.com/en/2017-18/Catalog/Programs-of-Study-and-Degree-Requirements"
+                           target="_blank" rel="noopener">Degree Requirements Page</a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-light-blue" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Mailing Lists -->
     <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="mailing"
