@@ -31,7 +31,7 @@ your extra branch(es).
 
 ### 1)  Create an image for the tile
 
-Create an image with text/title overlayed on the top:
+Create an image with text/title overlaid on the top:
 
 	- Aspect ratio:  1:2.6
 	- Resolution:  256ppi
