@@ -27,7 +27,7 @@ a)  To add a raw hyperlink, add the following code, editing the following parame
 
 ```html
 <!-- TILE NAME -->
-<a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="YOURID" href="YOURURL" target="_blank">
+<a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="YOURID" href="YOURURL" target="_blank" rel="noopener">
 	<img src="images/YOURFILENAME.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="TILE NAME">
 </a>
 ```
@@ -71,8 +71,8 @@ b)  To open a set of options (a bootstrap modal object) add the following code, 
 			</div>
 			<div class="modal-body">
 				<div class="list-group">
-					<a class="list-group-item list-group-item-action waves-effect" href="YOURURL1" target="_blank">URLTITLE1</a>
-					<a class="list-group-item list-group-item-action waves-effect" href="YOURURL2" target="_blank">URLTITLE2</a>
+					<a class="list-group-item list-group-item-action waves-effect" href="YOURURL1" target="_blank" rel="noopener">URLTITLE1</a>
+					<a class="list-group-item list-group-item-action waves-effect" href="YOURURL2" target="_blank" rel="noopener">URLTITLE2</a>
 					<!-- Add as many items as you want -->
 				</div>
 			</div>
