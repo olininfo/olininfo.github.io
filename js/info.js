@@ -37,8 +37,8 @@ let keywords = {
     "printing": "printing printers",
     "laundry": "laundry",
     "shuttle": "BOW Babson Wellesley Olin shuttle transportation",
-    "it": "it wiki wifi ubuntu matlab linux windows password",
-    "course_browser": "BOW Babson Wellesley Olin Cross course browser registration",
+    "it": "it wiki wifi ubuntu matlab linux windows reset password android phone ios solidworks",
+    "course_browser": "BOW Babson Wellesley Olin Brandeis Cross course browser registration",
     "onecard": "one card blackboard onecard",
     "libraries": "BOW Babson Wellesley Olin Library Libraries",
     "tools": "tools machine shop",
@@ -46,10 +46,10 @@ let keywords = {
     "sgconstitution": "SG constitution student government",
     "offcampus": "get off campus pop the bubble shuttle boston transportation",
     "mailing": "mailing lists carpediem",
-    "forms": "star oss reimbursement forms Self Study Requirement work order",
+    "forms": "star oss reimbursement forms Self Study Requirement work order Independent Study Research ISR ISRG ISR-G",
     "adastra": "ad astra booking rooms reserve reservation",
     "babsonhealth": "Babson Health Services",
-    "club": "Committee for Clubs and Organizations Acronym aero badminton board climbing cardistry DnD D&D Dungeons Dragons outing puzzle soft robotics formula baja oars core cco serv slac frisbee rocket Phoenix aquatic",
+    "club": "Committee for Clubs and Organizations Orgs Acronym aero badminton board climbing cardistry DnD D&D Dungeons Dragons outing puzzle soft robotics formula baja oars core cco serv slac frisbee rocket Phoenix aquatic",
     "feedback": "tiles site feedback"
 };
 
