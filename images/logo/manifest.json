@@ -1,5 +1,7 @@
 {
  "name": "Olin Info",
+ "theme_color": "#fff",
+ "background_color ": "#fff",
  "icons": [
   {
    "src": "\/android-icon-36x36.png",
