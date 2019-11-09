@@ -51,7 +51,7 @@ let keywords = {
     "onecard": "one card blackboard onecard",
     "libraries": "BOW Babson Wellesley Olin Library Libraries writing NINJA ninja",
     "tools": "tools machine shop",
-    "degree_reqs": "Degree course graduation major requirements planning templates",
+    "degree_reqs": "Degree course graduation major requirements planning templates ahs humanities arts social science",
     "sgconstitution": "SG constitution student government",
     "offcampus": "get off campus pop the bubble shuttle boston transportation",
     "mailing": "mailing lists carpediem helpme email",
