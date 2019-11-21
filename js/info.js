@@ -11,7 +11,7 @@ $(document).ready(function () {
         }
     });
 
-    // If a pushstate has previously happened and the back button is clicked, hide any modals.
+    // If the pushState has previously happened and the back button is clicked, hide any modals.
     $(window).on('popstate', function () {
         if (urlReplace !== "") {
             urlReplace = "";
@@ -55,7 +55,7 @@ let keywords = {
     "sgconstitution": "SG constitution student government",
     "offcampus": "get off campus pop the bubble shuttle boston transportation",
     "mailing": "mailing lists carpediem helpme email",
-    "forms": "star oss reimbursement forms Self Study Requirement work order Independent Study Research ISR ISRG ISR-G ECE stockroom parts direct deposit catalogs student handbooks",
+    "forms": "star oss reimbursement forms Self Study Requirement work order Independent Study Research ISR ISRG ISR-G ECE stockroom parts direct deposit smart catalogs student handbooks",
     "adastra": "ad astra booking rooms reserve reservation",
     "babsonhealth": "Babson Health Services colony care wellness mental",
     "club": "Committee for Clubs and Organizations Orgs Acronym aero badminton board climbing cardistry DnD D&D Dungeons Dragons outing puzzle soft robotics formula baja oars core cco serv slac frisbee rocket Phoenix aquatic",
@@ -72,7 +72,7 @@ function searchFunction() {
             tile.style.display = "";
     } else {
         inputs = inputs.split(" ");
-        // Loop through all list items, and hide those who don't match the search query
+        // Loop through all list items, and hide those that don't match the search query
         for (let tile of tiles) {
             if (!keywords[tile.id])
                 continue;
