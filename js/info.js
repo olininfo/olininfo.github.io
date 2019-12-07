@@ -60,7 +60,8 @@ let keywords = {
     "babsonhealth": "Babson Health Services colony care wellness mental",
     "club": "Committee for Clubs and Organizations Orgs Acronym aero badminton board climbing cardistry DnD D&D Dungeons Dragons outing puzzle soft robotics formula baja oars core cco serv slac frisbee rocket Phoenix aquatic",
     "cars":"cars parking Cars Of Olin cars of olin whose car",
-    "feedback": "tiles site feedback"
+    "feedback": "tiles site feedback",
+    "fellowships": "fellowship sketch model pint summer 2020"
 };
 
 function searchFunction() {
