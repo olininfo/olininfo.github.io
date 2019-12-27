@@ -77,11 +77,11 @@
 <p class="h2 text-center" style="font-family: 'Lucida Console', Monaco, monospace;">info.olin.build</p>
 
 <!-- Search form -->
-<form class="form-inline md-form form-sm flex-center" style="margin: 1rem 0 1rem 0">
-    <input class="form-control form-control-sm" id="searchBar" type="text" oninput="searchFunction()"
-           placeholder="Search" aria-label="Search" style="width: 72%; max-width: 860px">
-    <i class="fa fa-search" aria-hidden="true"></i>
-</form>
+<div class="md-form" style="width: 72%; max-width: 860px; margin: 1em auto 2em auto">
+    <i class="fa fa-search prefix" aria-hidden="true"></i>
+    <input class="form-control" id="searchBar" type="text" oninput="searchFunction()">
+    <label for="searchBar">Search</label>
+</div>
 
 <!-- Tiles container -->
 <div class="row mr-4 ml-4">
