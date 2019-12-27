@@ -31,20 +31,12 @@ your extra branch(es).
 
 ### 1)  Create an image for the tile
 
-Create an image with text/title overlaid on the top:
-
-	- Aspect ratio:  1:2.6
-	- Resolution:  256ppi
-	- Font: DIN OT;  Size: 24
-	- Opaque black overlay:  30%
-	- Export to .jpg
-
-Remember to keep the original image.
+Load your image using Adobe Photoshop and export your image as jpg using the **Save for Web (Legacy)** feature (i.e. `File > Export > Save For Web (Legacy)`). To save space, make sure the image width is between 1024 and 2048. Remember to keep the original image.
 
 ### 2)  Add images
 
 - Add the modified image to the `/images` directory.
-- Add the original image to the `/images/images_notext` directory.
+- Add the original image to the `/images/images_original` directory.
 
 ### 3) Make a tile:
 
@@ -62,8 +54,12 @@ a)  To add a raw hyperlink, add the following code, editing the following parame
 
 ```html
 <!-- TILE NAME -->
-<a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="YOURID" href="YOURURL" target="_blank" rel="noopener">
-	<img src="images/YOURFILENAME.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="TILE NAME">
+<a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4" id="YOURID" href="YOURURL" target="_blank" rel="noopener">
+    <div class="tile-wrapper hoverable flex-center img-fluid z-depth-1"
+         style="background: url('images/YOURFILENAME.jpg') center; background-size: cover">
+         <div class="layer"></div>
+         <h1>TILE NAME</h1>
+    </div>
 </a>
 ```
 b)  To open a set of options (a bootstrap modal object) add the following code, editing the parameters as you go:
@@ -77,8 +73,12 @@ b)  To open a set of options (a bootstrap modal object) add the following code, 
 * TILE NAME (under the alt attribute)
 ```html
 <!-- TILE NAME -->
-<a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="YOURID" data-toggle="modal" data-target="#YOURIDModal">
-	<img src="images/YOURFILENAME.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="TILE NAME">
+<a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4" id="YOURID" data-toggle="modal" data-target="#YOURIDModal">
+	<div class="tile-wrapper hoverable flex-center img-fluid z-depth-1"
+         style="background: url('images/YOURFILENAME.jpg') center; background-size: cover">
+         <div class="layer"></div>
+         <h1>TILE NAME</h1>
+    </div>
 </a>
 ```
 

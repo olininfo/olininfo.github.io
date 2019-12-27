@@ -86,9 +86,13 @@
 <!-- Tiles container -->
 <div class="row mr-4 ml-4">
     <!-- Dining Menu -->
-    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="dining"
-       data-toggle="modal" data-target="#diningModal" href="#">
-        <img src="images/olindining.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="Dining menu">
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4"
+       id="dining" data-toggle="modal" data-target="#diningModal" href="#">
+        <div class="tile-wrapper hoverable flex-center img-fluid z-depth-1"
+             style="background: url('images/olindining.jpg') center; background-size: cover">
+            <div class="layer"></div>
+            <h1>Dining Menu</h1>
+        </div>
     </a>
 
     <div class="modal fade" id="diningModal" tabindex="-1" role="dialog"
@@ -120,9 +124,13 @@
     </div>
 
     <!-- Calendar -->
-    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="calendar" data-toggle="modal"
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4" id="calendar" data-toggle="modal"
        data-target="#calendarModal" href="#">
-        <img src="images/calendar.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="Calendars">
+        <div class="tile-wrapper hoverable flex-center img-fluid z-depth-1"
+             style="background: url('images/Calendar.jpg') center; background-size: cover">
+            <div class="layer"></div>
+            <h1>Calendar</h1>
+        </div>
     </a>
 
     <div class="modal fade" id="calendarModal" tabindex="-1" role="dialog" aria-labelledby="calendarModalLabel"
@@ -152,17 +160,23 @@
     <!-- FlyOlinFly -->
     <!--Permanent link except for the last one that got sent out for this year:
         https://olincollege-my.sharepoint.com/:f:/g/personal/mvu_olin_edu/EtXPi2L6GGFLiccNsnSLG2sBxSm_IK7IpeTxVP8qv9kavA?e=Wuf6DO-->
-    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="flyolinfly"
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4" id="flyolinfly"
        href="https://docs.google.com/spreadsheets/d/1gRIz9h9W4M6uZT5srB2qS96PKI9v-JsSFNDQnDoZwdU/edit?usp=sharing"
        target="_blank" rel="noopener">
-        <img src="images/flyolinfly.jpg" class="hoverable img-fluid z-depth-1 tile-image"
-             alt="Flight carpool spreadsheet">
+        <div class="tile-wrapper hoverable flex-center img-fluid z-depth-1"
+             style="background: url('images/flyolinfly.jpg') center; background-size: cover">
+            <div class="layer"></div>
+            <h1>FlyOlinFly</h1>
+        </div>
     </a>
 
     <!-- Printing -->
-    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="printing" data-toggle="modal"
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4" id="printing" data-toggle="modal"
        data-target="#printerModal" href="#">
-        <img src="images/printers.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="Printing">
+        <div class="tile-wrapper hoverable flex-center img-fluid z-depth-1"
+             style="background: url('images/printers.jpg') center; background-size: cover">
+            <h1>Printing</h1>
+        </div>
     </a>
 
     <div class="modal fade" id="printerModal" tabindex="-1" role="dialog" aria-labelledby="printerModalLabel"
@@ -217,24 +231,35 @@
     </div>
 
     <!-- Laundry -->
-    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="laundry"
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4" id="laundry"
        href="https://m.laundryview.com/home/2/296977"
        target="_blank" rel="noopener">
-        <img src="images/laundry.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="Laundry Status">
+        <div class="tile-wrapper hoverable flex-center img-fluid z-depth-1"
+             style="background: url('images/laundry.jpg') center; background-size: cover">
+            <div class="layer"></div>
+            <h1>Laundry Status</h1>
+        </div>
     </a>
 
     <!-- Shuttle -->
-    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="shuttle"
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4" id="shuttle"
        href="https://olin.theopenscholar.com/files/bow-3colleges/files/2018-2019_bow_shuttle_schedule.pdf"
        target="_blank" rel="noopener">
-        <img src="images/bowshuttle.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="Shuttle Schedule">
+        <div class="tile-wrapper hoverable flex-center img-fluid z-depth-1"
+             style="background: url('images/bowshuttle.jpg') center; background-size: cover">
+            <h1>BOW Shuttle</h1>
+        </div>
     </a>
 
     <!-- IT -->
-    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="it"
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4" id="it"
        href="http://wikis.olin.edu/it/doku.php"
        target="_blank" rel="noopener">
-        <img src="images/ITwiki.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="Olin IT Wiki">
+        <div class="tile-wrapper hoverable flex-center img-fluid z-depth-1"
+             style="background: url('images/ITwiki.jpg') center; background-size: cover">
+            <div class="layer"></div>
+            <h1>IT Wiki</h1>
+        </div>
     </a>
 
     <div class="modal fade" id="course_browserModal" tabindex="-1" role="dialog"
@@ -275,21 +300,33 @@
     </div>
 
     <!-- One Card -->
-    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="onecard"
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4" id="onecard"
        href="https://eacct-olin-sp.blackboard.com/eAccounts/AnonymousHome.aspx" target="_blank" rel="noopener">
-        <img src="images/onecard.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="One Card Blackboard">
+        <div class="tile-wrapper hoverable flex-center img-fluid z-depth-1"
+             style="background: url('images/onecard.jpg') center; background-size: cover">
+            <div class="layer"></div>
+            <h1>OneCard</h1>
+        </div>
     </a>
 
     <!-- Tools -->
-    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="tools" href="https://tools.olin.edu"
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4" id="tools" href="https://tools.olin.edu"
        target="_blank" rel="noopener">
-        <img src="images/olintools.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="Tools">
+        <div class="tile-wrapper hoverable flex-center img-fluid z-depth-1"
+             style="background: url('images/olintools.jpg') center; background-size: cover">
+            <div class="layer"></div>
+            <h1>Tools</h1>
+        </div>
     </a>
 
     <!-- Libraries -->
-    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="libraries" data-toggle="modal"
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4" id="libraries" data-toggle="modal"
        data-target="#librariesModal" href="#">
-        <img src="images/library.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="Library">
+        <div class="tile-wrapper hoverable flex-center img-fluid z-depth-1"
+             style="background: url('images/library.jpg') center; background-size: cover">
+            <div class="layer"></div>
+            <h1>Library</h1>
+        </div>
     </a>
 
     <div class="modal fade" id="librariesModal" tabindex="-1" role="dialog" aria-labelledby="librariesModalLabel"
@@ -323,9 +360,13 @@
 
 
     <!-- Fellowships -->
-    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="fellowships" data-toggle="modal"
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4" id="fellowships" data-toggle="modal"
        data-target="#fellowshipsModal" href="#">
-        <img src="images/fellowships.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="Fellowships">
+        <div class="tile-wrapper hoverable flex-center img-fluid z-depth-1"
+             style="background: url('images/fellowships.jpg') center; background-size: cover">
+            <div class="layer"></div>
+            <h1>Fellowships</h1>
+        </div>
     </a>
 
     <div class="modal fade" id="fellowshipsModal" tabindex="-1" role="dialog" aria-labelledby="fellowshipsModalLabel"
@@ -338,7 +379,8 @@
                 <div class="modal-body">
                     <div class="list-group">
                         <a class="list-group-item list-group-item-action waves-effect"
-                           href="http://pint.olin.edu/fellowship" target="_blank" rel="noopener">PInT Fellowship Summer 2020</a>
+                           href="http://pint.olin.edu/fellowship" target="_blank" rel="noopener">PInT Fellowship Summer
+                            2020</a>
                         <a class="list-group-item list-group-item-action waves-effect"
                            href="http://www.olin.edu/collaborate/sketch-model/sketch-model-summer-fellowship/"
                            target="_blank" rel="noopener">Sketch Model Fellowship Summer 2020</a>
@@ -346,7 +388,8 @@
                            href="https://drive.google.com/file/d/19AiDVYrVkK5eherVNQEzusB0JFc3hmsb/view?usp=sharing"
                            target="_blank" rel="noopener">Alice Paul Research Opportunity Summer 2020</a>
                     </div>
-                    <a style="font-size: 12px;" href="youtube.com/watch?v=_nwYYFV03dM"target="_blank" rel="noopener">Cover image credit</a>
+                    <a style="font-size: 12px;" href="youtube.com/watch?v=_nwYYFV03dM" target="_blank" rel="noopener">Cover
+                        image credit</a>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-outline-light-blue" data-dismiss="modal">Close</button>
@@ -357,9 +400,13 @@
 
 
     <!-- Forms -->
-    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="forms" data-toggle="modal"
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4" id="forms" data-toggle="modal"
        data-target="#formsModal" href="#">
-        <img src="images/Forms.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="Forms">
+        <div class="tile-wrapper hoverable flex-center img-fluid z-depth-1"
+             style="background: url('images/forms.jpg') center; background-size: cover">
+            <div class="layer"></div>
+            <h1>Forms</h1>
+        </div>
     </a>
 
     <div class="modal fade" id="formsModal" tabindex="-1" role="dialog" aria-labelledby="formsModalLabel"
@@ -417,9 +464,13 @@
     </div>
 
     <!-- Degree Requirements -->
-    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="degree_reqs"
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4" id="degree_reqs"
        data-toggle="modal" data-target="#degreeReqsModal" href="#">
-        <img src="images/degree.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="Degree Requirements">
+        <div class="tile-wrapper hoverable flex-center img-fluid z-depth-1"
+             style="background: url('images/degree.jpg') center; background-size: cover">
+            <div class="layer"></div>
+            <h1>Degree Reqs</h1>
+        </div>
     </a>
 
     <div class="modal fade" id="degreeReqsModal" tabindex="-1" role="dialog"
@@ -454,21 +505,32 @@
     </div>
 
     <!-- Course Browser -->
-    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="course_browser" data-toggle="modal"
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4" id="course_browser" data-toggle="modal"
        data-target="#course_browserModal" href="#">
-        <img src="images/coursebrowser.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="Course Browser">
+        <div class="tile-wrapper hoverable flex-center img-fluid z-depth-1"
+             style="background: url('images/coursebrowser.jpg') center; background-size: cover">
+            <div class="layer"></div>
+            <h1>Course Browser</h1>
+        </div>
     </a>
 
     <!-- Mailing Lists -->
-    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="mailing"
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4" id="mailing"
        href="https://lists.olin.edu/mailman/listinfo/" target="_blank" rel="noopener">
-        <img src="images/email.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="Mailing Lists">
+        <div class="tile-wrapper hoverable flex-center img-fluid z-depth-1"
+             style="background: url('images/email.jpg') center; background-size: cover">
+            <h1>Mailing Lists</h1>
+        </div>
     </a>
 
     <!-- Babson Health Services -->
-    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="babsonhealth" data-toggle="modal"
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4" id="babsonhealth" data-toggle="modal"
        data-target="#healthModal" href="#">
-        <img src="images/babsonhealth.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="Health & Wellness">
+        <div class="tile-wrapper hoverable flex-center img-fluid z-depth-1"
+             style="background: url('images/babsonhealth.jpg') center; background-size: cover">
+            <div class="layer"></div>
+            <h1>Babson Health</h1>
+        </div>
     </a>
 
     <div class="modal fade" id="healthModal" tabindex="-1" role="dialog" aria-labelledby="healthModalLabel"
@@ -496,15 +558,23 @@
     </div>
 
     <!-- Ad Astra-->
-    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="adastra"
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4" id="adastra"
        href="http://scheduler.olin.edu:8080/astraweb/index.jsp?start_page=home.htm" target="_blank" rel="noopener">
-        <img src="images/adastra.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="Ad astra">
+        <div class="tile-wrapper hoverable flex-center img-fluid z-depth-1"
+             style="background: url('images/adastra.jpg') center; background-size: cover">
+            <div class="layer"></div>
+            <h1>Ad Astra</h1>
+        </div>
     </a>
 
     <!-- Club -->
-    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="club" data-toggle="modal"
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4" id="club" data-toggle="modal"
        data-target="#clubModal" href="#">
-        <img src="images/clubs.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="Clubs">
+        <div class="tile-wrapper hoverable flex-center img-fluid z-depth-1"
+             style="background: url('images/clubs.jpg') center; background-size: cover">
+            <div class="layer"></div>
+            <h1>Clubs & Orgs</h1>
+        </div>
     </a>
 
     <div class="modal fade" id="clubModal" tabindex="-1" role="dialog" aria-labelledby="clubModalLabel"
@@ -546,29 +616,43 @@
     </div>
 
     <!-- Constitution -->
-    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="sgconstitution"
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4" id="sgconstitution"
        href="https://github.com/olin/studentgovernment" target="_blank" rel="noopener">
-        <img src="images/constitution.jpg" class="hoverable img-fluid z-depth-1 tile-image"
-             alt="Student Government Constitution">
+        <div class="tile-wrapper hoverable flex-center img-fluid z-depth-1"
+             style="background: url('images/constitution.jpg') center; background-size: cover">
+            <div class="layer"></div>
+            <h1>SG Constitution</h1>
+        </div>
     </a>
-    
+
     <!-- Cars of Olin -->
-    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="cars"
-       href="https://docs.google.com/spreadsheets/d/1OmADP8d7Ie9XPCpZL1fPl7IZo0ZUQUYsImRdJXIAnRw/edit?usp=sharing" target="_blank" rel="noopener">
-        <img src="images/parking.jpg" class="hoverable img-fluid z-depth-1 tile-image"
-             alt="Cars of Olin">
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4" id="cars"
+       href="https://docs.google.com/spreadsheets/d/1OmADP8d7Ie9XPCpZL1fPl7IZo0ZUQUYsImRdJXIAnRw/edit?usp=sharing"
+       target="_blank" rel="noopener">
+        <div class="tile-wrapper hoverable flex-center img-fluid z-depth-1"
+             style="background: url('images/parking.jpg') center; background-size: cover">
+            <div class="layer"></div>
+            <h1>Cars of Olin</h1>
+        </div>
     </a>
 
     <!-- Get off campus -->
-    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="offcampus"
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4" id="offcampus"
        href="https://drive.google.com/file/d/1xRvo4Asf9boG9tMHNuDUsB0omXsgt8z_/view" target="_blank" rel="noopener">
-        <img src="images/getoffcampus.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="Get off campus">
+        <div class="tile-wrapper hoverable flex-center img-fluid z-depth-1"
+             style="background: url('images/getoffcampus.jpg') center; background-size: cover">
+            <h1>Get Off Campus</h1>
+        </div>
     </a>
 
     <!-- Feedback -->
-    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4 flex-center" id="feedback"
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4" id="feedback"
        href="https://goo.gl/forms/TsWQIWJpX7LmEyOm2" target="_blank" rel="noopener">
-        <img src="images/feedback.jpg" class="hoverable img-fluid z-depth-1 tile-image" alt="Site Feedback">
+        <div class="tile-wrapper hoverable flex-center img-fluid z-depth-1"
+             style="background: url('images/feedback.jpg') center; background-size: cover">
+            <div class="layer"></div>
+            <h1>Site Feedback</h1>
+        </div>
     </a>
 
 </div>
