@@ -34,7 +34,17 @@
     font-size: 340%;
 }
 
-@media only screen and (max-device-width: 1400px) {
+@media (min-width: 1400px) and (max-width: 1690px) {
+    .tile-wrapper {
+        height: 120px;
+    }
+
+    .tile-wrapper h1 {
+        font-size: 220%;
+    }
+}
+
+@media (max-width: 1399px) {
     .tile-wrapper {
         height: 120px;
     }
