@@ -45,7 +45,7 @@ let keywords = {
     "flyolinfly": "fly flights airport ride carpool transportation",
     "printing": "print printing printers",
     "laundry": "laundry",
-    "shuttle": "BOW Babson Wellesley Olin shuttle transportation",
+    "transportation": "BOW Babson Wellesley Olin shuttle transportation get off campus pop the bubble shuttle boston cars parking Cars Of Olin cars of olin whose car",
     "it": "it wiki wifi ubuntu matlab linux windows reset password android phone ios solidworks",
     "course_browser": "BOW Babson Wellesley Olin Brandeis Cross course browser registration",
     "onecard": "one card blackboard onecard",
@@ -53,15 +53,13 @@ let keywords = {
     "tools": "tools machine shop",
     "degree_reqs": "Degree course graduation major requirements planning templates ahs humanities arts social science",
     "sgconstitution": "SG constitution student government",
-    "offcampus": "get off campus pop the bubble shuttle boston transportation",
     "mailing": "mailing lists carpediem helpme email",
     "forms": "star oss reimbursement forms Self Study Requirement work order Independent Study Research ISR ISRG ISR-G ECE stockroom parts direct deposit smart catalogs student handbooks",
     "adastra": "ad astra booking rooms reserve reservation",
     "babsonhealth": "Babson Health Services colony care wellness mental",
     "club": "Committee for Clubs and Organizations Orgs Acronym aero badminton board climbing cardistry DnD D&D Dungeons Dragons outing puzzle soft robotics formula baja oars core cco serv slac frisbee rocket Phoenix aquatic",
-    "cars":"cars parking Cars Of Olin cars of olin whose car",
     "feedback": "tiles site feedback",
-    "fellowships": "fellowship sketch model pint summer 2020"
+    "jobs": "fellowship sketch model pint summer 2020 jobs opportunities opportunity"
 };
 
 function searchFunction() {
