@@ -4,12 +4,9 @@ self.addEventListener('install', function (event) {
     event.waitUntil(
         caches.open(staticCacheName).then(function (cache) {
             return cache.addAll([
-                '/',
+                '',
+                'index.html',
                 'js/info.js',
-                'js/bootstrap.js',
-                'js/mdb.js',
-                'css/bootstrap.css',
-                'css/mdb.css',
                 'css/styles.css',
                 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
                 'images/adastra.jpg',
@@ -19,12 +16,14 @@ self.addEventListener('install', function (event) {
                 'images/bowshuttle.jpg',
                 'images/calendar.jpg',
                 'images/clubs.jpg',
+                'images/constitution.jpg',
                 'images/coursebrowser.jpg',
                 'images/degree.jpg',
                 'images/email.jpg',
                 'images/feedback.jpg',
+                'images/fellowships.jpg',
                 'images/flyolinfly.jpg',
-                'images/Forms.jpg',
+                'images/forms.jpg',
                 'images/getoffcampus.jpg',
                 'images/ITwiki.jpg',
                 'images/laundry.jpg',
@@ -32,9 +31,9 @@ self.addEventListener('install', function (event) {
                 'images/olindining.jpg',
                 'images/olintools.jpg',
                 'images/onecard.jpg',
-                'images/ossform.jpg',
+                'images/parking.jpg',
                 'images/printers.jpg',
-                'images/starforms.jpg'
+                'images/reimbursement.jpg'
             ]);
         })
     );
