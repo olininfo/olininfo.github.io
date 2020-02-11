@@ -300,23 +300,47 @@
         </div>
     </a>
 
-    <!-- Course Browser -->
-    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4" id="course_browser" data-toggle="modal"
-       data-target="#course_browserModal" href="#">
+    <!-- Courses & Graduation Requirements -->
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4" id="coursesGradReqs" data-toggle="modal"
+       data-target="#coursesGradReqsModal" href="#">
         <div class="tile-wrapper hoverable flex-center img-fluid z-depth-1"
              style="background: url('images/coursebrowser.jpg') center; background-size: cover">
             <div class="layer"></div>
-            <h1>Course Browser</h1>
+            <h1>Courses & Graduation Requirements</h1>
         </div>
     </a>
 
-    <div class="modal fade" id="course_browserModal" tabindex="-1" role="dialog"
-         aria-labelledby="course_browserModalLabel"
+    <!-- Courses / Graduation Requirements Chooser -->
+    <div class="modal fade" id="coursesGradReqsModal" tabindex="-1" role="dialog"
+         aria-labelledby="coursesGradReqsModalLabel" aria-hidden="false">
+         <div class="modal-dialog modal-lg" role="document">
+             <div class="modal-content">
+                 <div class="modal-header">
+                     <h5 class="modal-title" id="coursesGradReqsModalLabel">Courses & Graduation Requirements</h5>
+                 </div>
+                 <div class="modal-body">
+                     <div class="list-group">
+                             <a class="list-group-item list-group-item-action waves-effect" data-toggle="modal"
+                                data-target="#courseBrowserModal" href="#">Course Browsers & Catalogs</a>
+                             <a class="list-group-item list-group-item-action waves-effect" data-toggle="modal"
+                                data-target="#degreeReqsModal" href="#">Degree & Graduation Requirements</a>
+                     </div>
+                 </div>
+                 <div class="modal-footer">
+                     <button type="button" class="btn btn-outline-light-blue" data-dismiss="modal">Close</button>
+                 </div>
+             </div>
+         </div>
+    </div>
+
+    <!-- Courses Modal -->
+    <div class="modal fade" id="courseBrowserModal" tabindex="-1" role="dialog"
+         aria-labelledby="courseBrowserModalLabel"
          aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="course_browserModalLabel">Course Browser</h5>
+                    <h5 class="modal-title" id="courseBrowserModalLabel">Course Browser</h5>
                 </div>
                 <div class="modal-body">
                     <div class="list-group">
@@ -341,6 +365,38 @@
                         <a class="list-group-item list-group-item-action waves-effect"
                            href="http://olin.smartcatalogiq.com/en"
                            target="_blank" rel="noopener">Olin Catalog and Student Handbook</a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-light-blue" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Graduation Requirements Modal -->
+    <div class="modal fade" id="degreeReqsModal" tabindex="-1" role="dialog"
+         aria-labelledby="degreeReqsModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="degreeReqsModalLabel">Degree Requirements</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="list-group">
+                        <a class="list-group-item list-group-item-action waves-effect"
+                           href="http://www.olin.edu/sites/default/files/reg_curriculummap_2018_19.pdf"
+                           target="_blank" rel="noopener">General Requirements Chart</a>
+                        <a class="list-group-item list-group-item-action waves-effect"
+                           href="http://olin.smartcatalogiq.com/en/2017-18/Catalog/Programs-of-Study-and-Degree-Requirements"
+                           target="_blank" rel="noopener">Major & Concentration Requirements</a>
+                        <a class="list-group-item list-group-item-action waves-effect"
+                           href="https://drive.google.com/drive/folders/0B1UuzaGK4KUTOUtwYWt4QVBvclE" target="_blank"
+                           rel="noopener">Course Planning Templates</a>
+                        <a class="list-group-item list-group-item-action waves-effect"
+                           href="http://ahs.olin.edu/" target="_blank"
+                           rel="noopener">AHS Requirements and Info</a>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -409,7 +465,6 @@
         </div>
     </div>
 
-
     <!-- Jobs -->
     <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4" id="jobs" data-toggle="modal"
        data-target="#jobsModal" href="#">
@@ -465,6 +520,7 @@
         </div>
     </a>
 
+    <!-- Forms Modal -->
     <div class="modal fade" id="formsModal" tabindex="-1" role="dialog" aria-labelledby="formsModalLabel"
          aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
@@ -475,41 +531,23 @@
                 <div class="modal-body">
                     <div class="list-group">
                         <a class="list-group-item list-group-item-action waves-effect"
-                           href="https://docs.google.com/forms/d/e/1FAIpQLSc-DVfB33JOQaVtgRthy_CgfqTeVMb1SuUywNw735wnQI3S1A/viewform?usp=sf_link"
-                           target="_blank" rel="noopener">Student Body Spending Form</a>
-                        <a class="list-group-item list-group-item-action waves-effect"
                            href="http://www.olin.edu/academic-life/student-affairs-resources/registrar/my-forms/"
                            target="_blank" rel="noopener">STaR Forms</a>
                         <a class="list-group-item list-group-item-action waves-effect"
-                           href="https://drive.google.com/file/d/1bUVIiPPKmEI92A0hKjb_UvYg6lCgDlE6/view?usp=sharing"
-                           target="_blank" rel="noopener">Reimbursement Form (NEW 2019)</a>
-                        <a class="list-group-item list-group-item-action waves-effect"
                            href="https://app.webtma.net/GenerateRequest.aspx?key=8fMN5Hy6FyxarCurPZiqeTCxGg7U4E25%2fTi8Vlue5RMMiBfVfoDCswiaJa8ifcWq"
-                           target="_blank" rel="noopener">Work Order Website</a>
-                        <a class="list-group-item list-group-item-action waves-effect"
-                           href="http://www.olin.edu/sites/default/files/reg_isr-g_cover_sheet_for_proposal.pdf"
-                           target="_blank" rel="noopener">Independent Study/Research (NEW 2018-19)</a>
-                        <a class="list-group-item list-group-item-action waves-effect"
-                           href="http://www.olin.edu/sites/default/files/reg_passionate_pursuit_proposal.pdf"
-                           target="_blank" rel="noopener">Passionate Pursuit Proposal</a>
-                        <a class="list-group-item list-group-item-action waves-effect"
-                           href="http://www.olin.edu/sites/default/files/reg_passionate_pursuit_reimbursement_form.pdf"
-                           target="_blank" rel="noopener">Passionate Pursuit Reimbursement Form</a>
+                           target="_blank" rel="noopener">Work Orders</a>
                         <a class="list-group-item list-group-item-action waves-effect"
                            href="https://bit.ly/ecestockroom"
-                           target="_blank" rel="noopener">ECE Stockroom Parts Request Form</a>
-                        <a class="list-group-item list-group-item-action waves-effect"
-                           href="http://www.olin.edu/sites/default/files/student_direct_deposit_form_updated_08.15.pdf"
-                           target="_blank" rel="noopener">Student Direct Deposit Form</a>
+                           target="_blank" rel="noopener">ECE Stockroom Parts Request</a>
                         <a class="list-group-item list-group-item-action waves-effect"
                            href="https://drive.google.com/file/d/1r9l_VKq9HRCr0YAjHVAv8S-Lq7QsNonJ/view?usp=sharing"
                            target="_blank" rel="noopener">Bike Room Registration</a>
-                        <a class="list-group-item list-group-item-action waves-effect"
-                           href="https://drive.google.com/file/d/1px8nVa94rys9WXF0OLCC01naCEaxJWeC/view?usp=sharing"
-                           target="_blank" rel="noopener">Missed Pay Period Timesheet</a>
-                        <a class="list-group-item list-group-item-action waves-effect"
-                           href="https://www.olin.edu/sites/default/files/olin_college_offer_guidelines_0.pdf"
-                           target="_blank" rel="noopener">Olin College Employer Guidelines</a>
+                        <a class="list-group-item list-group-item-action waves-effect" data-toggle="modal"
+                           data-target="#moneyFormsModal" data-dismiss="modal" href="#">Spending, Reimbursement & Direct Deposit</a>
+                        <a class="list-group-item list-group-item-action waves-effect" data-toggle="modal"
+                           data-target="#employmentFormsModal" data-dismiss="modal" href="#">Student Employment</a>
+                        <a class="list-group-item list-group-item-action waves-effect" data-toggle="modal"
+                           data-target="#studyFormsModal" data-dismiss="modal" href="#">Passionate Pursuits & IS/R</a>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -519,42 +557,94 @@
         </div>
     </div>
 
-    <!-- Degree Requirements -->
-    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4" id="degree_reqs"
-       data-toggle="modal" data-target="#degreeReqsModal" href="#">
-        <div class="tile-wrapper hoverable flex-center img-fluid z-depth-1"
-             style="background: url('images/degree.jpg') center; background-size: cover">
-            <div class="layer"></div>
-            <h1>Degree Reqs</h1>
-        </div>
-    </a>
-
-    <div class="modal fade" id="degreeReqsModal" tabindex="-1" role="dialog"
-         aria-labelledby="degreeReqsModalLabel"
+    <!-- Spending, Reimbursement & Direct Deposit Forms -->
+    <div class="modal fade" id="moneyFormsModal" tabindex="-1" role="dialog" aria-labelledby="moneyFormsModalLabel"
          aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="degreeReqsModalLabel">Degree Requirements</h5>
+                    <h5 class="modal-title" id="formsModalLabel">Spending, Reimbursement & Direct Deposit</h5>
                 </div>
                 <div class="modal-body">
                     <div class="list-group">
                         <a class="list-group-item list-group-item-action waves-effect"
-                           href="http://www.olin.edu/sites/default/files/reg_curriculummap_2018_19.pdf"
-                           target="_blank" rel="noopener">General Requirements Chart</a>
+                           href="https://docs.google.com/forms/d/e/1FAIpQLSc-DVfB33JOQaVtgRthy_CgfqTeVMb1SuUywNw735wnQI3S1A/viewform?usp=sf_link"
+                           target="_blank" rel="noopener">Student Body Spending Form</a>
                         <a class="list-group-item list-group-item-action waves-effect"
-                           href="http://olin.smartcatalogiq.com/en/2017-18/Catalog/Programs-of-Study-and-Degree-Requirements"
-                           target="_blank" rel="noopener">Major & Concentration Requirements</a>
+                           href="https://drive.google.com/file/d/1bUVIiPPKmEI92A0hKjb_UvYg6lCgDlE6/view?usp=sharing"
+                           target="_blank" rel="noopener">Reimbursement Form (NEW 2019)</a>
                         <a class="list-group-item list-group-item-action waves-effect"
-                           href="https://drive.google.com/drive/folders/0B1UuzaGK4KUTOUtwYWt4QVBvclE" target="_blank"
-                           rel="noopener">Course Planning Templates</a>
+                           href="http://www.olin.edu/sites/default/files/reg_passionate_pursuit_reimbursement_form.pdf"
+                           target="_blank" rel="noopener">Passionate Pursuit Reimbursement Form</a>
                         <a class="list-group-item list-group-item-action waves-effect"
-                           href="http://ahs.olin.edu/" target="_blank"
-                           rel="noopener">AHS Requirements and Info</a>
+                           href="http://www.olin.edu/sites/default/files/student_direct_deposit_form_updated_08.15.pdf"
+                           target="_blank" rel="noopener">Direct Deposit Form</a>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-outline-light-blue" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-outline-light-blue" data-toggle="modal"
+                       data-target="#formsModal" data-dismiss="modal">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Student Employment Forms -->
+    <div class="modal fade" id="employmentFormsModal" tabindex="-1" role="dialog" aria-labelledby="employmentFormsModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="formsModalLabel">Student Employment Forms</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="list-group">
+                        <a class="list-group-item list-group-item-action waves-effect"
+                           href="http://www.olin.edu/sites/default/files/student_direct_deposit_form_updated_08.15.pdf"
+                           target="_blank" rel="noopener">Direct Deposit Form</a>
+                        <a class="list-group-item list-group-item-action waves-effect"
+                           href="https://drive.google.com/file/d/1px8nVa94rys9WXF0OLCC01naCEaxJWeC/view?usp=sharing"
+                           target="_blank" rel="noopener">Missed Pay Period Timesheet</a>
+                        <a class="list-group-item list-group-item-action waves-effect"
+                           href="https://www.olin.edu/sites/default/files/olin_college_offer_guidelines_0.pdf"
+                           target="_blank" rel="noopener">Olin College Employer Guidelines</a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-light-blue" data-toggle="modal"
+                       data-target="#formsModal" data-dismiss="modal">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Passionate Pursuits & IS/R Forms -->
+    <div class="modal fade" id="studyFormsModal" tabindex="-1" role="dialog" aria-labelledby="studyFormsModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="formsModalLabel">Passionate Pursuits & IS/R</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="list-group">
+                        <a class="list-group-item list-group-item-action waves-effect"
+                           href="http://www.olin.edu/academic-life/student-affairs-resources/registrar/my-forms/"
+                           target="_blank" rel="noopener">STaR Forms</a>
+                        <a class="list-group-item list-group-item-action waves-effect"
+                           href="http://www.olin.edu/sites/default/files/reg_isr-g_cover_sheet_for_proposal.pdf"
+                           target="_blank" rel="noopener">Independent Study/Research (NEW 2018-19)</a>
+                        <a class="list-group-item list-group-item-action waves-effect"
+                           href="http://www.olin.edu/sites/default/files/reg_passionate_pursuit_proposal.pdf"
+                           target="_blank" rel="noopener">Passionate Pursuit Proposal</a>
+                        <a class="list-group-item list-group-item-action waves-effect"
+                           href="http://www.olin.edu/sites/default/files/reg_passionate_pursuit_reimbursement_form.pdf"
+                           target="_blank" rel="noopener">Passionate Pursuit Reimbursement Form</a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-light-blue" data-toggle="modal"
+                       data-target="#formsModal" data-dismiss="modal">Back</button>
                 </div>
             </div>
         </div>
