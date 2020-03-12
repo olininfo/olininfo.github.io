@@ -34,6 +34,10 @@
     font-size: 340%;
 }
 
+.modal-body h6 {
+    margin-top: 1em;
+}
+
 @media (min-width: 1400px) and (max-width: 1690px) {
     .tile-wrapper {
         height: 120px;
