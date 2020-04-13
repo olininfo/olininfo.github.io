@@ -47,7 +47,7 @@ let keywords = {
     "laundry": "laundry machines washer dryer status",
     "transportation": "BOW Babson Wellesley Olin shuttle transportation get off campus pop bubble shuttle boston cars parking permit olin whose borrow go bikes bicycles",
     "it": "it wiki wifi ubuntu matlab linux windows reset password android phone ios solidworks",
-    "coursesReqs": "Degree course graduate graduation major concentration requirements planner planning templates ahs humanities arts BOW Babson Wellesley Olin Brandeis Cross course browser registration catalogs student handbooks",
+    "coursesReqs": "Degree course graduate graduation major concentration requirements planner planning templates ahs humanities arts BOW Babson Wellesley Olin Brandeis Cross course browser registration catalogs student handbooks coloring",
     "onecard": "one card blackboard onecard money laundry recharge refill",
     "libraries": "BOW Babson Wellesley Olin Library Libraries help writing ta ninja",
     "tools": "tools machines shop training lab equipment",
