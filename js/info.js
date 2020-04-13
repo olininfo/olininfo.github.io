@@ -58,9 +58,7 @@ let keywords = {
     "babsonhealth": "Babson Health Services colony care wellness mental",
     "club": "Committee Clubs Organizations Orgs Acronym aero badminton board climbing cardistry DnD D&D Dungeons Dragons outing puzzle soft robotics formula baja oars core cco serv slac frisbee rocket Phoenix aquatic",
     "feedback": "tiles site feedback",
-    "jobs": "fellowship sketch model pint summer 2020 jobs opportunities opportunity",
-    "selling": "senior selling stuff",
-    "housing": "shared communal housing"
+    "jobs": "fellowship sketch model pint summer 2020 jobs opportunities opportunity"
 };
 
 function searchFunction() {
