@@ -14,7 +14,7 @@ self.addEventListener('install', function (event) {
                 'images/babsonhealth.jpg',
                 'images/background.png',
                 'images/bowshuttle.jpg',
-                'images/calendar.jpg',
+                'images/frankscalendar.jpg',
                 'images/clubs.jpg',
                 'images/constitution.jpg',
                 'images/coursebrowser.jpg',
@@ -30,8 +30,8 @@ self.addEventListener('install', function (event) {
                 'images/library.jpg',
                 'images/olindining.jpg',
                 'images/olintools.jpg',
+                'images/olinahead.jpg',
                 'images/onecard.jpg',
-                'images/parking.jpg',
                 'images/printers.jpg',
                 'images/reimbursement.jpg'
             ]);

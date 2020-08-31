@@ -41,12 +41,12 @@ $(document).ready(function () {
 
 let keywords = {
     "dining": "dining hall olin trim wellesley babson dinner lunch breakfast brunch hours menus restaurant Lulu Chow Wang Campus Center food drink",
-    "calendar": "calendars events events academic schedules",
+    "frankscalendar": "franks calendars events academic schedules student affairs star pgp post graduate planning admission study away international financial aid diversity inclusion clubs organizations library shop health wellness support SLAC",
     "flyolinfly": "fly flights airport ride carpool transportation",
     "printing": "print printing printers",
     "laundry": "laundry machines washer dryer status",
     "transportation": "BOW Babson Wellesley Olin shuttle transportation get off campus pop bubble shuttle boston cars parking permit olin whose borrow go bikes bicycles",
-    "it": "it wiki wifi ubuntu matlab linux windows reset password android phone ios solidworks",
+    "it": "it wiki wifi ubuntu matlab linux windows reset password android phone ios solidworks technical support",
     "coursesReqs": "Degree course graduate graduation major concentration requirements planner planning templates ahs humanities arts BOW Babson Wellesley Olin Brandeis Cross course browser registration catalogs student handbooks coloring",
     "onecard": "one card blackboard onecard money laundry recharge refill",
     "libraries": "BOW Babson Wellesley Olin Library Libraries help writing ta ninja",
@@ -55,11 +55,12 @@ let keywords = {
     "mailing": "mailing lists carpediem helpme email",
     "forms": "forms requests star oss reimbursement spending Self Study Requirement work order passionate pursuit proposal Independent Research ISRG ISR-G ECE stockroom parts direct deposit bikes bicycle registration timesheet pay",
     "adastra": "ad astra booking rooms reserve reservation",
-    "babsonhealth": "Babson Health Services colony care wellness mental",
+    "babsonhealth": "Babson Health Services colony care wellness mental counseling therapy betterhelp",
     "club": "Committee Clubs Organizations Orgs Acronym aero badminton board climbing cardistry DnD D&D Dungeons Dragons outing puzzle soft robotics formula baja oars core cco serv slac frisbee rocket Phoenix aquatic",
     "feedback": "tiles site feedback",
-    "jobs": "fellowship sketch model pint summer 2020 jobs opportunities opportunity",
-    "eGameDatabase": "play online board games database gaming connect"
+    "jobs": "handshake fellowship sketch model pint summer 2020 jobs opportunities opportunity",
+    "eGameDatabase": "play online board games database gaming connect",
+    "olinahead": "olin ahead olinahead updates covid-19 coronavirus safety returning to campus masks handwashing hygiene testing risks bubble ovalcam"
 };
 
 function searchFunction() {

@@ -31,7 +31,14 @@ your extra branch(es).
 
 ### 1)  Create an image for the tile
 
-Load your image using Adobe Photoshop and export your image as jpg using the **Save for Web (Legacy)** feature (i.e. `File > Export > Save For Web (Legacy)`). To save space, make sure the image width is between 1024 and 2048. Remember to keep the original image.
+Card images should be:
+- Saved in .JPG format
+- 2.5:1 aspect ratio (landscape orientation)
+- 1024-2048px wide
+- Dark enough to show white text clearly
+- Free of text in the center of the image
+
+If you are using Adobe Photoshop, you can export your image as jpg using the **Save for Web (Legacy)** feature (i.e. `File > Export > Save For Web (Legacy)`). To save space, make sure the image width is between 1024 and 2048. Remember to keep the original image.
 
 ### 2)  Add images
 
@@ -44,7 +51,7 @@ First, open the `index.html` file, adding code under the `<!-- Tiles container -
 
 **There are two ways to add a tile:**
 
-a)  To add a raw hyperlink, add the following code, editing the following parameters as you go:
+*Option 1:*  To add a raw hyperlink, add the following code, editing the following parameters as you go:
 
 * TILE NAME (in the comment)
 * YOURID (unique keyword identifying your tile)
@@ -62,7 +69,7 @@ a)  To add a raw hyperlink, add the following code, editing the following parame
     </div>
 </a>
 ```
-b)  To open a set of options (a bootstrap modal object) add the following code, editing the parameters as you go:
+*Option 2:*  To open a set of options (a bootstrap modal object) add the following code, editing the parameters as you go:
 
 **Step one:** Add the tile card under the `<!-- Tiles container -->` section 
 
