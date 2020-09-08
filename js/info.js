@@ -49,7 +49,7 @@ let keywords = {
     "it": "it wiki wifi ubuntu matlab linux windows reset password android phone ios solidworks technical support",
     "coursesReqs": "Degree course graduate graduation major concentration requirements planner planning templates ahs humanities arts BOW Babson Wellesley Olin Brandeis Cross course browser registration catalogs student handbooks coloring",
     "onecard": "one card blackboard onecard money laundry recharge refill",
-    "libraries": "BOW Babson Wellesley Olin Library Libraries help writing ta ninja",
+    "libraries": "BOW Babson Wellesley Olin Library Libraries help writing ta ninja tools drill sewing borrow request order minuteman",
     "tools": "tools machines shop training lab equipment",
     "sgconstitution": "SG constitution student government",
     "mailing": "mailing lists carpediem helpme email",
