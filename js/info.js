@@ -50,7 +50,6 @@ let keywords = {
     "coursesReqs": "Degree course graduate graduation major concentration requirements planner planning templates ahs humanities arts BOW Babson Wellesley Olin Brandeis Cross course browser registration catalogs student handbooks coloring",
     "onecard": "one card blackboard onecard money laundry recharge refill",
     "libraries": "BOW Babson Wellesley Olin Library Libraries help writing ta ninja tools drill sewing borrow request order minuteman",
-    "tools": "tools machines shop training lab equipment",
     "sgconstitution": "SG constitution student government",
     "mailing": "mailing lists carpediem helpme email",
     "forms": "forms requests star oss reimbursement spending Self Study Requirement work order passionate pursuit proposal Independent Research ISRG ISR-G ECE stockroom parts direct deposit bikes bicycle registration timesheet pay",
@@ -60,7 +59,9 @@ let keywords = {
     "feedback": "tiles site feedback",
     "jobs": "handshake fellowship sketch model pint summer 2020 jobs opportunities opportunity",
     "eGameDatabase": "play online board games database gaming connect",
-    "olinahead": "olin ahead olinahead updates covid-19 coronavirus safety returning to campus masks handwashing hygiene testing risks bubble ovalcam"
+    "olinahead": "olin ahead olinahead updates covid-19 coronavirus safety returning to campus masks handwashing hygiene testing risks bubble ovalcam",
+    "shop":"machine shop tools work order training lab equipment machines material sourcing 3d print mill lathe manufacture fabrication",
+    "remoteaccess":"remote access vpn juniper IT it"
 };
 
 function searchFunction() {

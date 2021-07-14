@@ -628,15 +628,39 @@
         </div>
     </div>
 
-    <!-- Tools -->
-    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4" id="tools" href="https://tools.olin.edu"
-        target="_blank" rel="noopener">
+    <!-- Machine Shop -->
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4" id="shop" data-toggle="modal" data-target="#shopModal">
         <div class="tile-wrapper hoverable flex-center img-fluid z-depth-1"
-              style="background: url('images/olintools.jpg') center; background-size: cover">
-             <div class="layer"></div>
-             <h1>Tools</h1>
+            style="background: url('images/olintools.jpg') center; background-size: cover">
+            <div class="layer"></div>
+            <h1>Machine Shop</h1>
         </div>
     </a>
+
+    <div class="modal fade" id="shopModal" tabindex="-1" role="dialog" aria-labelledby="shopModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="shopModalLabel">Machine Shop</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="list-group">
+                        <a class="list-group-item list-group-item-action waves-effect" href="https://machineshop.olin.edu/" target="_blank" rel="noopener">Shop Main Website</a>
+                        <a class="list-group-item list-group-item-action waves-effect" href="https://docs.google.com/forms/d/e/1FAIpQLSc8yEJMZHmKemJrYusXco8RYSolG5GbxrFn1PmPaY8vJLHufA/viewform" target="_blank" rel="noopener">Submit a Workorder</a>
+                        <a class="list-group-item list-group-item-action waves-effect" href="https://outlook.office365.com/owa/calendar/ShopTest@olin.edu/bookings/" target="_blank" rel="noopener">Schedule a Training</a>
+                        <a class="list-group-item list-group-item-action waves-effect" href="https://docs.google.com/spreadsheets/d/1jfob9gVYZZkCZc4wNg8JULbB30nOluEu7tC-GKFI4Do/edit?usp=sharing" target="_blank" rel="noopener">Sourcing Materials</a>
+                        <!-- Add as many items as you want -->
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-light-blue" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Transportation -->
     <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4" id="transportation" data-toggle="modal"
