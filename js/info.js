@@ -40,27 +40,25 @@ $(document).ready(function () {
 
 
 let keywords = {
-    "dining": "dining hall olin trim wellesley babson dinner lunch breakfast brunch hours menus restaurant Lulu Chow Wang Campus Center food drink",
-    "frankscalendar": "franks calendars events academic schedules student affairs star pgp post graduate planning admission study away international financial aid diversity inclusion clubs organizations library shop health wellness support SLAC",
+    "dining": "dining hall olin trim wellesley babson dinner lunch breakfast brunch hours menus restaurant Lulu Chow Wang Campus Center food drink hours schedule transact order app",
     "flyolinfly": "fly flights airport ride carpool transportation",
     "printing": "print printing printers",
     "laundry": "laundry machines washer dryer status",
     "transportation": "BOW Babson Wellesley Olin shuttle transportation get off campus pop bubble shuttle boston cars parking permit olin whose borrow go bikes bicycles",
-    "it": "it wiki wifi ubuntu matlab linux windows reset password android phone ios solidworks technical support",
+    "it": "it wiki wifi ubuntu matlab linux windows reset password android phone ios solidworks technical support install set up setup connect network",
     "coursesReqs": "Degree course graduate graduation major concentration requirements planner planning templates ahs humanities arts BOW Babson Wellesley Olin Brandeis Cross course browser registration catalogs student handbooks coloring",
-    "onecard": "one card blackboard onecard money laundry recharge refill",
+    "onecard": "one card blackboard onecard money laundry recharge refill transact",
     "libraries": "BOW Babson Wellesley Olin Library Libraries help writing ta ninja tools drill sewing borrow request order minuteman",
     "sgconstitution": "SG constitution student government",
     "mailing": "mailing lists carpediem helpme email",
-    "forms": "forms requests star oss reimbursement spending Self Study Requirement work order passionate pursuit proposal Independent Research ISRG ISR-G ECE stockroom parts direct deposit bikes bicycle registration timesheet pay",
-    "adastra": "ad astra booking rooms reserve reservation",
+    "forms": "forms requests star oss reimbursement spending Self Study Requirement work order passionate pursuit proposal Independent Research ISRG ISR-G ECE stockroom parts direct deposit bikes bicycle registration timesheet pay campus visit visitor guest",
+    "adastra": "ad astra booking rooms reserve reservation schedule scheduling reserve space",
     "babsonhealth": "Babson Health Services colony care wellness mental counseling therapy betterhelp",
     "club": "Committee Clubs Organizations Orgs Acronym aero badminton board climbing cardistry DnD D&D Dungeons Dragons outing puzzle soft robotics formula baja oars core cco serv slac frisbee rocket Phoenix aquatic",
     "feedback": "tiles site feedback",
     "jobs": "handshake fellowship sketch model pint summer 2020 jobs opportunities opportunity",
-    "eGameDatabase": "play online board games database gaming connect",
-    "olinahead": "olin ahead olinahead updates covid-19 coronavirus safety returning to campus masks handwashing hygiene testing risks bubble ovalcam",
-    "shop":"machine shop tools work order training lab equipment machines material sourcing 3d print mill lathe manufacture fabrication",
+    "olinahead": "olin ahead olinahead updates covid covid-19 coronavirus safety return campus masks handwashing hygiene testing results schedule risks bubble test visit visitor guest form asymptomatic dashboard cases results stats statistics",
+    "shop":"machine shop tools work order workorder training lab equipment machines material sourcing 3d print mill lathe manufacture fabrication",
     "remoteaccess":"remote access vpn juniper IT it"
 };
 
