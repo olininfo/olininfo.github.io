@@ -328,16 +328,51 @@
         </div>
     </div>
 
-    <!-- Laundry -->
-    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4" id="laundry"
-       href="https://m.laundryview.com/home/2/296977"
-       target="_blank" rel="noopener">
+    <!-- Laundry Modal-->
+    <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4" id="laundry" data-toggle="modal" data-target="#laundryModal">
         <div class="tile-wrapper hoverable flex-center img-fluid z-depth-1"
              style="background: url('images/laundry.jpg') center; background-size: cover">
-            <div class="layer"></div>
-            <h1>Laundry Status</h1>
+             <div class="layer"></div>
+             <h1>Laundry</h1>
         </div>
     </a>
+
+    
+    <div class="modal fade" id="laundryModal" tabindex="-1" role="dialog"
+         aria-labelledby="laundryModal"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="laundryLabel">Laundry</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="list-group">
+                        <a class="list-group-item list-group-item-action waves-effect"
+                           href="https://m.laundryview.com/home/2/296977"
+                           target="_blank" rel="noopener">[All Campus] Check Laundry Status</a>
+                        <a class="list-group-item list-group-item-action waves-effect"
+                           href="https://www.cscsw.com/request-service/?clarifysiteid=M29697&AS400BuildingId=0142117204"
+                           target="_blank" rel="noopener">[EH] Report Laundry Problem</a>
+                        <a class="list-group-item list-group-item-action waves-effect"
+                           href="https://www.cscsw.com/request-service/?clarifysiteid=M29697&AS400BuildingId=0142117201"
+                           target="_blank" rel="noopener">[WH2] Report Laundry Problem</a>
+                        <a class="list-group-item list-group-item-action waves-effect"
+                           href="https://www.cscsw.com/request-service/?clarifysiteid=M29697&AS400BuildingId=0142117202"
+                           target="_blank" rel="noopener">[WH3] Report Laundry Problem</a>
+                        <a class="list-group-item list-group-item-action waves-effect"
+                           href="https://www.cscsw.com/request-service/?clarifysiteid=M29697&AS400BuildingId=0142117206"
+                           target="_blank" rel="noopener">[WH4] Report Laundry Problem</a>  
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-light-blue" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---->
 
     <!-- IT -->
     <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4" id="it"
