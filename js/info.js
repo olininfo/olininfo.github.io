@@ -58,6 +58,7 @@ let keywords = {
     "feedback": "tiles site feedback",
     "jobs": "handshake fellowship sketch model pint summer 2020 jobs opportunities opportunity",
     "olinahead": "olin ahead olinahead updates covid covid-19 coronavirus safety return campus masks handwashing hygiene testing results schedule risks bubble test visit visitor guest form asymptomatic dashboard cases results stats statistics",
+    "sos": "help student meal deilvery dropoff study check walk buddy alone company advice vent mail animal pet mailroom volunteer",
     "shop":"machine shop tools work order workorder training lab equipment machines material sourcing 3d print mill lathe manufacture fabrication",
     "remoteaccess":"remote access vpn juniper IT it"
 };
