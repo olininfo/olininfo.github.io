@@ -1,17 +1,106 @@
 /* Your custom styles */
 
+:root {
+    --pink: #ed037c;
+    --light-purple: #c77eb5;
+    --purple: #7b5aa6;
+    --dark-purple: #511c74;
+    --dark-blue: #00458c;
+    --blue: #009dd1;
+    --aqua: #6bc1d3;
+    --light-teal: #26aaa5;
+    --dark-teal: #00677e;
+    --dark-green: #00653e;
+    --green: #349e49;
+    --light-green: #8ebe3f;
+    --lime-green: #c0d028;
+    --gold: #ffc20e;
+    --orange: #f47920;
+    --dark-orange: #cf1d39;
+    --dark-red: #750324;
+    --red: #e31d3c;
+    --regular: 'Barlow', 'Roboto', sans-serif;
+    --semi-cond: 'Barlow Semi Condensed', 'Roboto', sans-serif;
+    --condensed: 'Barlow Condensed', 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--regular);
+    font-weight: 400;
+}
+
+h1 {
+    font-family: 'Barlow Condensed', 'Lucida Console', Monaco, monospace;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.title-1 {
+    animation: rainbow 60s 12s infinite;
+    color: var(--blue);
+}
+.title-2 {
+    animation: rainbow 60s 6s infinite;
+    color: var(--blue);
+}
+.title-3 {
+    animation: rainbow 60s infinite;
+    color: var(--blue);
+}
+
+h2 {
+    font-family: var(--condensed);
+    font-weight: 500;
+}
+
+h5 {
+    font-family: var(--semi-cond);
+    font-weight: 500;
+    color: var(--blue);
+}
+
+h6 {
+    font-weight: 500;
+}
+
+a {
+    color: var(--blue);
+}
+
+a:hover {
+    color: var(--dark-blue);
+}
+
+.btn {
+    font-weight: 500;
+    padding: .5rem 1.5rem;
+}
+
+.btn-olin-blue {
+    color: white;
+    background-color: var(--blue);
+}
+.btn-olin-blue:hover {
+    color: white;
+}
+.btn-olin-blue:focus {
+    color: white;
+    background-color: var(--dark-blue);
+}
+.btn-olin-blue:active {
+    color: white;
+    background-color: var(--dark-blue);
+}
+
 .iframe-holder {
     -webkit-overflow-scrolling: touch;
     overflow-y: scroll;
 }
 
-.iframe-holder iframe {
-
-}
-
 .olin-bg {
     background: url("../images/background.png") center;
-    background-size: contain;
+    background-size: cover;
+    margin: 2em 0 2em 0;
 }
 
 .tile-wrapper {
@@ -27,7 +116,7 @@
     height: 100%;
 }
 
-.tile-wrapper h1 {
+.tile-wrapper h2 {
     position: absolute;
     color: white;
     text-align: center;
@@ -39,13 +128,41 @@
 .modal-body h6 {
     margin-top: 1em;
 }
+.modal-body h6:first-child {
+    margin-top: 0;
+}
+
+.heart {
+    font-size: 1.2em;
+    animation: rainbow 15s infinite;
+    color: var(--red);
+}
+
+@keyframes rainbow {
+    7% {color: var(--aqua);}
+    14% {color: var(--light-teal);}
+    21% {color: var(--dark-teal);}
+    24% {color: var(--dark-green);}
+    28% {color: var(--green);}
+    35% {color: var(--light-green);}
+    42% {color: var(--lime-green);}
+    49% {color: var(--gold);}
+    56% {color: var(--orange);}
+    63% {color: var(--red);}
+    70% {color: var(--pink);}
+    77% {color: var(--light-purple);}
+    84% {color: var(--purple);}
+    91% {color: var(--dark-purple);}
+    94% {color: var(--dark-blue);}
+    98% {color: var(--blue);}
+}
 
 @media (min-width: 1400px) and (max-width: 1690px) {
     .tile-wrapper {
         height: 120px;
     }
 
-    .tile-wrapper h1 {
+    .tile-wrapper h2 {
         font-size: 220%;
     }
 }
@@ -55,7 +172,13 @@
         height: 120px;
     }
 
-    .tile-wrapper h1 {
+    .tile-wrapper h2 {
         font-size: 180%;
+    }
+}
+
+@media (max-width: 425px) {
+    .tile {
+        padding: 0;
     }
 }
