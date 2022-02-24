@@ -40,11 +40,11 @@ h1 {
     color: var(--blue);
 }
 .title-2 {
-    animation: rainbow 55s 6s infinite;
+    animation: rainbow 60s 6s infinite;
     color: var(--blue);
 }
 .title-3 {
-    animation: rainbow 50s infinite;
+    animation: rainbow 60s infinite;
     color: var(--blue);
 }
 
@@ -92,17 +92,6 @@ a:hover {
     background-color: var(--dark-blue);
 }
 
-.md-form {
-    width: 72%;
-    max-width: 860px;
-    margin: 1em auto 2em auto
-}
-
-.md-form .prefix {
-    top: 0.75rem;
-    font-size: 1.5rem;
-}
-
 .iframe-holder {
     -webkit-overflow-scrolling: touch;
     overflow-y: scroll;
@@ -132,7 +121,7 @@ a:hover {
     color: white;
     text-align: center;
     font-size: 260%;
-    margin: 1em;
+    margin: 16px;
     text-shadow: 0px 0px 4px #000000;
 }
 
@@ -179,6 +168,10 @@ a:hover {
 }
 
 @media (max-width: 1399px) {
+    .tile-wrapper {
+        height: 120px;
+    }
+
     .tile-wrapper h2 {
         font-size: 180%;
         font-weight: 500;
@@ -186,22 +179,15 @@ a:hover {
 }
 
 @media (max-width: 425px) {
-    .md-form {
-        width: 90%;
+    .tile {
+        padding: 0;
     }
-
-    .md-form .prefix ~ label {
-        margin-left: 2rem;
+    .tile-wrapper {
+        height: 120px;
     }
 
     .tile-wrapper h2 {
-        font-size: 120%;
+        font-size: 160%;
         font-weight: 500;
-    }
-}
-
-@media (max-width: 320px) {
-    .tile-wrapper h2 {
-        font-size: 100%;
     }
 }
