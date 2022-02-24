@@ -157,17 +157,18 @@ a:hover {
     98% {color: var(--blue);}
 }
 
-@media (min-width: 1400px) and (max-width: 1690px) {
+@media (min-width: 1400px) {
     .tile-wrapper {
         height: 120px;
     }
 
     .tile-wrapper h2 {
         font-size: 220%;
+        font-weight: 400;
     }
 }
 
-@media (max-width: 1399px) {
+@media (min-width: 426px) and (max-width: 1399px) {
     .tile-wrapper {
         height: 120px;
     }
