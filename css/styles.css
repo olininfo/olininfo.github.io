@@ -50,7 +50,7 @@ h1 {
 
 h2 {
     font-family: var(--condensed);
-    font-weight: 500;
+    font-weight: 400;
 }
 
 h5 {
@@ -105,7 +105,7 @@ a:hover {
 
 .tile-wrapper {
     border-radius: 6px;
-    height: 180px;
+    height: 140px;
     display: flex;
 }
 
@@ -120,7 +120,7 @@ a:hover {
     position: absolute;
     color: white;
     text-align: center;
-    font-size: 340%;
+    font-size: 260%;
     margin: 16px;
     text-shadow: 0px 0px 4px #000000;
 }
@@ -157,29 +157,37 @@ a:hover {
     98% {color: var(--blue);}
 }
 
-@media (min-width: 1400px) {
+@media (max-width: 1600px) {
     .tile-wrapper {
         height: 120px;
     }
 
     .tile-wrapper h2 {
         font-size: 220%;
-        font-weight: 400;
     }
 }
 
-@media (min-width: 426px) and (max-width: 1399px) {
+@media (max-width: 1399px) {
     .tile-wrapper {
         height: 120px;
     }
 
     .tile-wrapper h2 {
         font-size: 180%;
+        font-weight: 500;
     }
 }
 
 @media (max-width: 425px) {
     .tile {
         padding: 0;
+    }
+    .tile-wrapper {
+        height: 120px;
+    }
+
+    .tile-wrapper h2 {
+        font-size: 160%;
+        font-weight: 500;
     }
 }
