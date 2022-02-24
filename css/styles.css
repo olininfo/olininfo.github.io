@@ -92,7 +92,7 @@ a:hover {
     background-color: var(--dark-blue);
 }
 
-.md-form .form-control {
+.md-form {
     width: 72%;
     max-width: 860px;
     margin: 1em auto 2em auto
@@ -186,7 +186,7 @@ a:hover {
 }
 
 @media (max-width: 425px) {
-    .md-form .form-control {
+    .md-form {
         width: 90%;
     }
 
@@ -195,7 +195,7 @@ a:hover {
     }
 
     .tile-wrapper h2 {
-        font-size: 140%;
+        font-size: 120%;
         font-weight: 500;
     }
 }
