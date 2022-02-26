@@ -1,5 +1,29 @@
 # How to contribute
 
+## Philosophy (read this first!)
+
+We want this resource to respond to the needs of the Olin student community. However, we also want to make information (relatively) easy to find. There's a balance between having a ton of information available and making it easy to navigate. When adding content, please consider:
+
+Necessity:
+- Is this information already easy to find? (Can it be reliably found in the top 3 web search results if you search for it?)
+	- Is this a website or tool that students would use so regularly that they don't need to search for it (i.e., Outlook, Canvas, course-specific sites)?
+- Is this information either:
+	- Used frequently, and annoying to navigate to
+	- Used infrequently but not rarely, and very hard to locate
+	- Something that students ask other students where to find, more than once
+
+Hierarchy:
+- Does this need its own tile, or can it be added under or merged with an existing one?
+	- There is a strong preference to limit the page to 16-20 tiles, as this generally fits on a desktop screen.
+- What position should the new item take relative to existing content?
+	- Do you want people to be able to spot it quickly, or
+	- Do you just want people to be able to find it if they're looking for it?
+
+Searchability:
+- Take a couple minutes to think about what search terms someone might use if they were looking for this resource.
+- Keep in mind that the search function on this site does not work like Google. It looks for the complete text you enter within strings of keywords.
+
+Thank you for contributing!
 
 ## Steps to create a clean pull request
 
@@ -15,16 +39,13 @@ Adapted from: https://gist.github.com/MarcDiethelm/7303312
 
 `git pull upstream master`
 
-- Create a new branch to work on! Branch from `develop` if it exists, else from `master`.
+- Optionally create a new branch to work on. Branch from `master`.
 - Implement your feature. Remember to comment your code.
 - Follow the code style of the project, including indentation.
-- If the project has tests run them!
-- Write or adapt tests as needed.
 - Add or change the documentation as needed.
-- If you have more than one commit, squash all your commits into a single commit with git's [interactive rebase](https://help.github.com/articles/interactive-rebase). A pull request should make one or a few changes. Create a new branch for a different change/feature if necessary.
-- Push your branch to your fork on Github, the remote `origin`.
-- From your fork open a pull request in the correct branch. Target the project's `develop` branch if there is one, else go for `master`!
-- Once the pull request is approved and merged you can pull the changes from `upstream` to your local repo and delete
+- Push your branch to your fork on Github, the remote `origin` (`git push origin {branch_name}`).
+- From your fork open a pull request in the correct branch. Target the project's `master` branch.
+- Once the pull request is approved and merged you can pull the changes from `upstream` (as shown previously) to your local repo and delete
 your extra branch(es).
 
 ## How to add a tile:
@@ -33,7 +54,7 @@ your extra branch(es).
 
 Card images should be:
 - Saved in .JPG format
-- 2.5:1 aspect ratio (landscape orientation)
+- Around 2.5:1 aspect ratio (landscape orientation)
 - 1024-2048px wide
 - Dark enough to show white text clearly
 - Free of text in the center of the image
