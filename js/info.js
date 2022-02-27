@@ -51,7 +51,7 @@ let keywords = {
     "libraries": "BOW Babson Wellesley Olin Library Libraries help writing ta ninja tools drill sewing borrow request order minuteman",
     "sgconstitution": "SG constitution student government",
     "mailing": "mailing lists carpediem helpme email",
-    "forms": "forms requests star oss reimbursement spending cross register add drop course Self Study Requirement work order workorder passionate pursuit proposal Independent Research ISRG ISR-G ECE stockroom parts direct deposit bikes bicycle registration missed previous time sheet card timesheet timecard adp employment worker voucher tax w4 w-4 i9 i-9 m4 m-4 pay payroll intellectual property agreement handbook campus visit visitor guest submit upload",
+    "forms": "forms requests star oss reimbursement purchasing p-card p card spending cross register add drop course Self Study Requirement work order workorder passionate pursuit proposal Independent Research ISRG ISR-G ECE stockroom parts direct deposit bikes bicycle registration missed previous time sheet card timesheet timecard adp employment worker voucher tax w4 w-4 i9 i-9 m4 m-4 pay payroll intellectual property agreement handbook campus visit visitor guest submit upload",
     "adastra": "ad astra booking rooms reserve reservation schedule scheduling reserve space",
     "babsonhealth": "Babson Health Services colony care wellness mental counseling therapy betterhelp",
     "club": "Committee Clubs Organizations Orgs Acronym aero badminton board climbing cardistry DnD D&D Dungeons Dragons outing puzzle soft robotics formula baja oars core cco serv slac frisbee rocket Phoenix aquatic",
