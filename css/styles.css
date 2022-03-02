@@ -29,8 +29,8 @@ body {
     font-weight: 400;
 }
 
-.h1 {
-    font-family: 'Barlow Condensed', 'Lucida Console', Monaco, monospace;
+h1 {
+    font-family: var(--condensed);
     font-style: italic;
     font-weight: 600;
 }
@@ -48,13 +48,13 @@ body {
     color: var(--blue);
 }
 
-.h5 {
+h5 {
     font-family: var(--semi-cond);
     font-weight: 500;
     color: var(--blue);
 }
 
-.h6 {
+h6 {
     font-weight: 500;
 }
 
