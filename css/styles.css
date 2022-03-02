@@ -104,12 +104,15 @@ a:hover {
     display: flex;
 }
 
-.tile-wrapper .tile-title {
+.tile-title {
     width: 100%;
     height: 100%;
     border-radius: 6px;
     background-color: rgba(0, 0, 0, .25);
     padding: 16px;
+}
+
+h2 {
     text-align: center;
     font-size: 260%;
     color: white;
@@ -118,10 +121,10 @@ a:hover {
     font-weight: 400;
 }
 
-.modal-body .h6 {
+.modal-body h6 {
     margin-top: 1em;
 }
-.modal-body .h6:first-child {
+.modal-body h6:first-child {
     margin-top: 0;
 }
 
@@ -155,7 +158,7 @@ a:hover {
         height: 120px;
     }
 
-    .tile-wrapper .tile-title {
+    h2 {
         font-size: 220%;
     }
 }
@@ -165,7 +168,7 @@ a:hover {
         height: 120px;
     }
 
-    .tile-wrapper .tile-title {
+    h2 {
         font-size: 200%;
         font-weight: 500;
     }
@@ -179,7 +182,7 @@ a:hover {
         height: 120px;
     }
 
-    .tile-wrapper .tile-title {
+    h2 {
         font-size: 160%;
         font-weight: 500;
     }
