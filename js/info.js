@@ -44,7 +44,7 @@ let keywords = {
     "flyolinfly": "fly flights airport ride carpool transportation",
     "printing": "print printing printers",
     "laundry": "laundry machines washer dryer status",
-    "transportation": "BOW Babson Wellesley Olin shuttle transportation get off campus pop bubble shuttle boston cars parking permit olin whose borrow go bikes bicycles",
+    "transportation": "Olin ride share rideshare car carpool BOW Babson Wellesley Olin shuttle transportation get off campus pop bubble shuttle boston cars parking permit olin whose borrow go bikes bicycles",
     "it": "it wiki wifi ubuntu matlab linux windows reset password android phone ios solidworks technical support install set up setup connect network",
     "coursesReqs": "add drop Degree course graduate graduation major concentration requirements planner planning templates ahs humanities arts BOW Babson Wellesley Olin Brandeis Cross course browser registration catalogs co-curricular cocurricular student handbooks coloring",
     "onecard": "one card blackboard onecard money laundry recharge refill transact",
