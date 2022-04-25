@@ -1,37 +1,57 @@
 # How to contribute
 
+Contents:
+* [Philosophy (read this first!)](#philosophy-read-this-first)
+* [Steps to create a clean pull request](#steps-to-create-a-clean-pull-request)
+* [How to add a tile](#how-to-add-a-tile)
+
 ## Philosophy (read this first!)
 
 We want this resource to respond to the needs of the Olin student community. However, we also want to make information (relatively) easy to find. There's a balance between having a ton of information available and making it easy to navigate. When adding content, please consider:
 
-Necessity:
+### Necessity:
 - Is this information already easy to find? (Can it be reliably found in the top 3 web search results if you search for it?)
 	- Is this a website or tool that students would use so regularly that they don't need to search for it (i.e., Outlook, Canvas, course-specific sites)?
 - Is this information either:
 	- Used frequently, and annoying to navigate to
 	- Used infrequently but not rarely, and very hard to locate
 	- Something that students ask other students where to find, more than once
+	- The P&M clause... see the [end of this section](#the-pm-clause)
 
-Hierarchy:
+### Hierarchy:
 - Does this need its own tile, or can it be added under or merged with an existing one?
 	- There is a strong preference to limit the page to 16-20 tiles, as this generally fits on a desktop screen.
 - What position should the new item take relative to existing content?
 	- Do you want people to be able to spot it quickly, or
 	- Do you just want people to be able to find it if they're looking for it?
 
-Searchability:
+### Searchability:
 - Take a couple minutes to think about what search terms someone might use if they were looking for this resource.
 - Keep in mind that the search function on this site does not work like Google. It looks for the complete text you enter within strings of keywords.
 
-Thank you for contributing!
+### It's **For** Oliners:
+- The site's purpose is to make it easy and convenient for Oliners to find information and resources that they need, relatively quickly. It's not a substitute for helpme or all-students emails. The site is not intended to host projects, surveys, or studies where students are not the direct and immediate beneficiaries. For example, a survey asking students what they thought of a recent change on campus would preferably be sent as an email, rather than adding one more object for people to search through on this site.
+
+#### The P&M clause
+We try to support Products & Markets (or oth class) groups that are trying to create resources and tools that improve the student experience. If a P&M group wants to add their project to the site, we generally help them do that. They'll often get their own tile, placed pretty high up, just to help them scrape up whatever exposure they can in the beginning. This site isn't exactly getting traffic like the first page of Google search results, anyhow.
+
+Once the project ends, if usage/interest is dwindling and the project is not going to be supported anymore, you can (please) delete the tile or link.
+
+The P&M clause does not supersede "It's for Oliners": I currently do not see the utility for users of including surveys or sales forms on the site.
+
+
+**Thank you for contributing!**
 
 ## Steps to create a clean pull request
 
 Adapted from: https://gist.github.com/MarcDiethelm/7303312 
 
 - Create a personal fork of the project on Github.
-- Clone the fork on your local machine. Your remote repo on Github is called `origin`.
-- Add the original repository as a remote called `upstream`: 
+- Clone the fork on your local machine:
+
+`git clone git@github.com:{your_username}/olininfo.github.io.git`
+- Your remote repo on Github is called `origin`.
+- From the project folder, add the original repository as a remote called `upstream`: 
 
 `git remote add upstream https://github.com/olininfo/olininfo.github.io.git`
 
@@ -43,12 +63,14 @@ Adapted from: https://gist.github.com/MarcDiethelm/7303312
 - Implement your feature. Remember to comment your code.
 - Follow the code style of the project, including indentation.
 - Add or change the documentation as needed.
-- Push your branch to your fork on Github, the remote `origin` (`git push origin {branch_name}`).
-- From your fork open a pull request in the correct branch. Target the project's `master` branch.
+- Push your branch to your fork on Github, the remote `origin`:
+
+`git push origin {branch_name}`
+- [Open a pull request](https://github.com/olininfo/olininfo.github.io/compare), "compare across forks" and be sure to select the correct branch from your fork. Target the project's `master` branch.
 - Once the pull request is approved and merged you can pull the changes from `upstream` (as shown previously) to your local repo and delete
 your extra branch(es).
 
-## How to add a tile:
+## How to add a tile
 
 ### 1)  Create an image for the tile
 
@@ -72,7 +94,8 @@ First, open the `index.html` file, adding code under the `<!-- Tiles container -
 
 **There are two ways to add a tile:**
 
-*Option 1:*  To add a raw hyperlink, add the following code, editing the following parameters as you go:
+#### *Option 1:*
+To add a raw hyperlink, add the following code, editing the following parameters as you go:
 
 * TILE NAME (in the comment)
 * YOURID (unique keyword identifying your tile)
@@ -90,7 +113,8 @@ First, open the `index.html` file, adding code under the `<!-- Tiles container -
     </div>
 </a>
 ```
-*Option 2:*  To open a set of options (a bootstrap modal object) add the following code, editing the parameters as you go:
+#### *Option 2:*
+To open a set of options (a bootstrap modal object) add the following code, editing the parameters as you go:
 
 **Step one:** Add the tile card under the `<!-- Tiles container -->` section 
 
