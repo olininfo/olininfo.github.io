@@ -108,9 +108,10 @@ To add a raw hyperlink, add the following code, editing the following parameters
 <!-- TILE NAME -->
 <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4" id="YOURID" href="YOURURL" target="_blank" rel="noopener">
     <div class="tile-wrapper hoverable flex-center img-fluid z-depth-1"
-         style="background: url('images/YOURFILENAME.jpg') center; background-size: cover">
-         <div class="layer"></div>
-         <h1>TILE NAME</h1>
+        style="background: url('images/YOURFILENAME.jpg') center; background-size: cover">
+        <div class="tile-title flex-center">
+			<h2>TILE NAME</h2>
+		</div>
     </div>
 </a>
 ```
@@ -128,9 +129,10 @@ To open a set of options (a bootstrap modal object) add the following code, edit
 <!-- TILE NAME -->
 <a class="tile col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mb-4" id="YOURID" data-toggle="modal" data-target="#YOURIDModal">
 	<div class="tile-wrapper hoverable flex-center img-fluid z-depth-1"
-         style="background: url('images/YOURFILENAME.jpg') center; background-size: cover">
-         <div class="layer"></div>
-         <h1>TILE NAME</h1>
+        style="background: url('images/YOURFILENAME.jpg') center; background-size: cover">
+        <div class="tile-title flex-center">
+			<h2>TILE NAME</h2>
+		</div>
     </div>
 </a>
 ```
@@ -165,7 +167,7 @@ To open a set of options (a bootstrap modal object) add the following code, edit
 				</div>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-outline-light-blue" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-olin-blue" data-dismiss="modal">Close</button>
 			</div>
 		</div>
 	</div>
