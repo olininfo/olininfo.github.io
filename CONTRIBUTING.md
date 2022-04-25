@@ -4,6 +4,7 @@ Contents:
 * [Philosophy (read this first!)](#philosophy-read-this-first)
 * [Steps to create a clean pull request](#steps-to-create-a-clean-pull-request)
 * [How to add a tile](#how-to-add-a-tile)
+* [The P&M archive & suggestions form](#the-pm-archive--suggestions-form)
 
 ## Philosophy (read this first!)
 
@@ -177,3 +178,8 @@ This attribute should consist of **YOURID**, which matches the **ID** set in `in
 ```html
 "YOURID": "KEYWORD1 KEYWORD2",
 ```
+
+## The P&M archive & suggestions form
+All the files related to the design & creation of this site live [here](https://drive.google.com/drive/folders/16EcBV1B2tCupr0TdoDJzYvmCNRK8D5cw?usp=sharing). You'll need to request access to see it, but we'll be happy that you asked.
+
+The feedback and suggestions form linked at the bottom of the site saves responses in [this folder](https://drive.google.com/drive/folders/1bM7ecg8Y9MawuHC73b0SvMs32eZfxFJq). If you're the current primary maintainer, you should check this occasionally. If the primary maintainer is AWOL, feel free to email them, request access to these files, and start updating things yourself.
