@@ -36,6 +36,16 @@ $(document).ready(function () {
                 console.log('Service worker registration failed, error:', error);
             });
     }
+
+    function modal_analytics() {
+        window.ga('send', 'event', {
+            'eventCategory': 'modal',
+            'eventAction': 'click',
+            'eventLabel': this.id,
+        });
+    }
+
+    $('a[data-toggle="modal"]').on('click', modal_analytics);
 });
 
 
@@ -69,6 +79,13 @@ function searchFunction() {
         for (let tile of tiles)
             tile.style.display = "";
     } else {
+        if (inputs.length >= 3) {
+            window.ga('send', 'event', {
+                eventCategory: 'search',
+                eventAction: 'word entry',
+                eventLabel: inputs,
+            });
+        }
         inputs = inputs.split(" ");
         // Loop through all list items, and hide those that don't match the search query
         for (let tile of tiles) {
