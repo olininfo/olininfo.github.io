@@ -41,11 +41,35 @@ $(document).ready(function () {
         window.ga('send', 'event', {
             'eventCategory': 'modal',
             'eventAction': 'click',
-            'eventLabel': this.id,
+            'eventLabel': $(this).data('target'),
         });
     }
 
+    function tile_analytics() {
+        window.ga('send', 'event', {
+            'eventCategory': 'tile',
+            'eventAction': 'click',
+            'eventLabel': this.id,
+            'eventValue': this.href,
+        });
+    }
+
+    function link_analytics() {
+        window.ga('send', 'event', {
+            'eventCategory': 'link',
+            'eventAction': 'click',
+            'eventLabel': this.text,
+            'eventValue': this.href,
+        });
+    }
+
+    function is_direct_link() {
+        return this.href && (this.href[this.href.length-1] != '#');
+    }
+
     $('a[data-toggle="modal"]').on('click', modal_analytics);
+    $('a.tile').filter(is_direct_link).on('click', tile_analytics);
+    $('a.list-group-item').filter(is_direct_link).on('click', link_analytics);
 });
 
 
