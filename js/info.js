@@ -54,11 +54,20 @@ $(document).ready(function () {
         });
     }
 
+    function modal_link_analytics() {
+        window.ga('send', 'event', {
+            'eventCategory': 'modal link',
+            'eventAction': 'click',
+            'eventLabel': this.text,
+            'eventValue': this.href,
+        });
+    }
+
     function link_analytics() {
         window.ga('send', 'event', {
             'eventCategory': 'link',
             'eventAction': 'click',
-            'eventLabel': this.text,
+            'eventLabel': this.text.trim(),
             'eventValue': this.href,
         });
     }
@@ -69,7 +78,8 @@ $(document).ready(function () {
 
     $('a[data-toggle="modal"]').on('click', modal_analytics);
     $('a.tile').filter(is_direct_link).on('click', tile_analytics);
-    $('a.list-group-item').filter(is_direct_link).on('click', link_analytics);
+    $('a.list-group-item').filter(is_direct_link).on('click', modal_link_analytics);
+    $('a').on('click', link_analytics);
 });
 
 
