@@ -92,6 +92,7 @@ let keywords = {
     "it": "it wiki wifi ubuntu matlab linux windows reset password android phone ios solidworks technical support install set up setup connect network",
     "coursesReqs": "add drop Degree course graduate graduation major concentration requirements planner planning templates ahs humanities arts BOW Babson Wellesley Olin Brandeis Cross course browser registration catalogs co-curricular cocurricular student handbooks coloring",
     "onecard": "one card blackboard onecard money laundry recharge refill transact",
+    "honorCode": "honor code board report form",
     "libraries": "BOW Babson Wellesley Olin Library Libraries help writing ta ninja tools drill sewing borrow request order minuteman",
     "mailing": "mailing lists carpediem helpme email",
     "forms": "forms requests star oss reimbursement purchasing p-card p card spending cross register add drop course Self Study Requirement work order workorder passionate pursuit proposal Independent Research ISRG ISR-G ECE stockroom parts direct deposit bikes bicycle registration missed pay previous time sheet card timesheet timecard adp employment worker voucher tax w4 w-4 i9 i-9 m4 m-4 payroll intellectual property agreement handbook campus visit visitor guest submit upload",
